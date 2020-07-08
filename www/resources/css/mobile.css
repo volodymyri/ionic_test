@@ -1,0 +1,36 @@
+body {
+    background-size: contain;
+}
+
+.auth-s-window {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.flex-spacer {
+    flex: 1;
+}
+
+.main-panel {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    align-self: flex-end;
+}
+
+.links {
+    background-color: #ffffff;
+    min-height: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+ul.links li {
+    color: #000000;
+}
+
+ul.links li a {
+    color: #0096EB;
+    font-weight: bold;
+}

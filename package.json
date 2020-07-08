@@ -1,0 +1,16 @@
+{
+  "name": "CriterionHCM",
+  "version": "1.0.0",
+  "description": "CriterionHCM",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://myorg@bitbucket.org/teamname/my-app.git"
+  },
+  "author": "Criterion",
+  "license": "ISC",
+  "homepage": "https://www.criterionhcm.com/"
+}

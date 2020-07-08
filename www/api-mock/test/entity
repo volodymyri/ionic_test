@@ -1,0 +1,34 @@
+{"result" : [
+    {
+        "id" : 1,
+        "string1" : "string value 1",
+        "date1" : "2014.08.13",
+
+        "childEntities" : [
+            {
+                "id" : 1,
+                "string1" : "string value 1-1"
+            },
+            {
+                "id" : 2,
+                "string1" : "string value 1-2"
+            }
+        ]
+    },
+    {
+        "id" : 1,
+        "string1" : "string value 2",
+        "date1" : "2014.08.13",
+
+        "childEntities" : [
+            {
+                "id" : 1,
+                "string1" : "string value 2-1"
+            },
+            {
+                "id" : 2,
+                "string1" : "string value 2-2"
+            }
+        ]
+    }
+], "success" : true}
