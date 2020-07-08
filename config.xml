@@ -26,7 +26,7 @@
     <preference name="UseSwiftLanguageVersion" value="4.0" />
     <preference name="phonegap-version" value="cli-7.1.0" />
     <preference name='pgb-builder-version' value='1' />
-    <icon src="res/icon.png" />
+    <icon src="icon.png" />
     <platform name="android">
         <icon qualifier="ldpi" src="res/icon/android/ldpi/launcher.png" />
         <icon qualifier="mdpi" src="res/icon/android/mdpi/launcher.png" />
