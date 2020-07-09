@@ -1,0 +1,928 @@
+Sencha Cmd 7.2.0.84 - Crash report
+================================================
+An error occurred while executing the following command: app build --uses development
+
+Diagnostic information:
+=======================
+                         app.archivePath : archive                                           
+                      app.bootstrap.base : D:\work\git\master\client\src\ess                 
+                       app.bootstrap.css : bootstrap.css                                     
+                  app.bootstrap.manifest : ${build.id}.json                                  
+               app.bootstrap.microloader : bootstrap.js                                      
+                app.builds.classic.theme : criterion-theme-classic-ess                       
+              app.builds.classic.toolkit : classic                                           
+                 app.builds.modern.theme : criterion-theme-modern-ess                        
+               app.builds.modern.toolkit : modern                                            
+      app.builds.native-android.packager : phonegap                                          
+app.builds.native-android.phonegap.config.id : com.criterion.ess                                 
+app.builds.native-android.phonegap.config.platform : android                                           
+app.builds.native-android.phonegap.config.remote : true                                              
+         app.builds.native-android.theme : criterion-theme-modern-ess                        
+       app.builds.native-android.toolkit : modern                                            
+          app.builds.native-ios.packager : phonegap                                          
+app.builds.native-ios.phonegap.config.id : com.criterion.ess                                 
+app.builds.native-ios.phonegap.config.platform : ios                                               
+app.builds.native-ios.phonegap.config.remote : true                                              
+             app.builds.native-ios.theme : criterion-theme-modern-ess                        
+           app.builds.native-ios.toolkit : modern                                            
+                        app.cache.deltas : ${build.id}/deltas                                
+                        app.cache.enable : false                                             
+                    app.classic.requires : package-loader,sencha-charts,criterion-ess        
+                  app.classic.requires.0 : package-loader                                    
+                  app.classic.requires.1 : sencha-charts                                     
+                  app.classic.requires.2 : criterion-ess                                     
+             app.classic.requires.length : 3                                                 
+                        app.classic.uses : criterion-ess-dashboard,criterion-ess-benefit,criterion-ess-time,criterion-ess-payroll,criterion-ess-resources,criterion-ess-calendar,criterion-ess-personal-information,criterion-ess-recruiting,criterion-ess-performance,criterion-ess-learning,criterion-ess-preferences,criterion-ess-career
+                      app.classic.uses.0 : criterion-ess-dashboard                           
+                      app.classic.uses.1 : criterion-ess-benefit                             
+                     app.classic.uses.10 : criterion-ess-preferences                         
+                     app.classic.uses.11 : criterion-ess-career                              
+                      app.classic.uses.2 : criterion-ess-time                                
+                      app.classic.uses.3 : criterion-ess-payroll                             
+                      app.classic.uses.4 : criterion-ess-resources                           
+                      app.classic.uses.5 : criterion-ess-calendar                            
+                      app.classic.uses.6 : criterion-ess-personal-information                
+                      app.classic.uses.7 : criterion-ess-recruiting                          
+                      app.classic.uses.8 : criterion-ess-performance                         
+                      app.classic.uses.9 : criterion-ess-learning                            
+                 app.classic.uses.length : 12                                                
+                           app.classpath : app,${toolkit.name}/src,D:\work\git\master\client\src\ess/../../lib
+                          app.compressor : null                                              
+                          app.config.dir : C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app
+                app.cordova.cache.enable : false                                             
+                   app.cordova.config.id : com.domain.ess                                    
+                 app.cordova.config.name : ess                                               
+                 app.cordova.config.path : D:\work\git\master\client\src\ess/cordova         
+               app.cordova.config.target :                                                   
+              app.cordova.config.verbose : false                                             
+                   app.cordova.js.0.path : cordova.js                                        
+               app.cordova.js.0.priority : 1000                                              
+                 app.cordova.js.0.remote : true                                              
+                   app.cordova.js.length : 1                                                 
+                 app.cordova.microloader : C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app/Microloader.js
+      app.cordova.output.appCache.enable : false                                             
+                 app.cordova.output.base : D:\work\git\master\client\src\ess/cordova/www     
+             app.cordova.output.manifest : ${build.id}.json                                  
+                 app.cordova.output.page : index.html                                        
+                                 app.dir : D:\work\git\master\client\src\ess                 
+              app.fashion.inliner.enable : false                                             
+                           app.framework : ext                                               
+                                  app.id : 5526739c-815a-4885-897c-94fe77711011              
+                       app.indexHtmlPath : index.html                                        
+           app.language.js.input.version : ES6                                               
+          app.language.js.output.version : ES5                                               
+                        app.loader.cache : false                                             
+                   app.loader.cacheParam : _dc                                               
+                     app.modern.requires : sencha-charts,criterion-ess,criterion-ess-dashboard,criterion-ess-personal-information
+                   app.modern.requires.0 : sencha-charts                                     
+                   app.modern.requires.1 : criterion-ess                                     
+                   app.modern.requires.2 : criterion-ess-dashboard                           
+                   app.modern.requires.3 : criterion-ess-personal-information                
+              app.modern.requires.length : 4                                                 
+                                app.name : ess                                               
+              app.output.appCache.enable : false                                             
+                         app.output.base : D:\work\git\master\client/build/${build.environment}/ess
+                           app.output.js : ${build.id}/app.js                                
+                     app.output.manifest : ${build.id}.json                                  
+           app.output.microloader.enable : true                                              
+                         app.output.page : index.html                                        
+               app.output.resources.path : ${build.id}/resources                             
+             app.output.resources.shared : resources                                         
+                           app.overrides : overrides,${toolkit.name}/overrides               
+               app.phonegap.cache.enable : false                                             
+                  app.phonegap.config.id : com.domain.ess                                    
+                app.phonegap.config.name : ess                                               
+                app.phonegap.config.path : D:\work\git\master\client\src\ess/phonegap        
+              app.phonegap.config.remote : false                                             
+             app.phonegap.config.verbose : false                                             
+                  app.phonegap.js.0.path : cordova.js                                        
+              app.phonegap.js.0.priority : 1000                                              
+                app.phonegap.js.0.remote : true                                              
+                  app.phonegap.js.length : 1                                                 
+                app.phonegap.microloader : C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app/Microloader.js
+     app.phonegap.output.appCache.enable : false                                             
+                app.phonegap.output.base : D:\work\git\master\client\src\ess/phonegap/www    
+            app.phonegap.output.manifest : ${build.id}.json                                  
+                app.phonegap.output.page : index.html                                        
+             app.production.cache.enable : false                                             
+          app.production.compressor.type : cmd                                               
+             app.production.loader.cache : ${build.timestamp}                                
+   app.production.output.appCache.enable : false                                             
+     app.production.output.appCache.path : ../cache.appcache                                 
+                        app.sass.dynamic : true                                              
+                            app.sass.etc : sass/etc/all.scss,${toolkit.name}/sass/etc/all.scss
+                        app.sass.fashion : true                                              
+                      app.sass.namespace : ess                                               
+                            app.sass.src : sass/src,${toolkit.name}/sass/src                 
+                            app.sass.var : sass/var/all.scss,sass/var,${toolkit.name}/sass/var
+                              app.slicer : null                                              
+                             app.version : 1.0.0.0                                           
+                    buildenvironment.dir : D:\work\git\master\client\src\ess                 
+               buildenvironment.load.dir : D:\work\git\master\client\src\ess                 
+                          cmd.config.dir : C:\Users\volod\bin\Sencha\Cmd\7.2.0.84            
+                                 cmd.dir : C:\Users\volod\bin\Sencha\Cmd\7.2.0.84            
+                    cmd.framework.minver : 5.5.0                                             
+                   cmd.framework.version : 99.99                                             
+              cmd.merge.tool.args.araxis : -wait -merge -3 -a1 {base} {user} {generated} {out}
+              cmd.merge.tool.args.kdiff3 : {base} {user} {generated} -o {out}                
+             cmd.merge.tool.args.p4merge : {base} {user} {generated} {out}                   
+           cmd.merge.tool.args.smartsync : {user} {generated} {base}                         
+          cmd.merge.tool.args.sourcegear : --merge --result={out} {user} {base} {generated}  
+            cmd.merge.tool.args.tortoise : -base:{base} -theirs:{generated} -mine:{user} -merged:{out}
+                              cmd.minver : 3.0.0.0                                           
+                            cmd.platform : windows                                           
+                     cmd.unicode.escapes : C:\Users\volod\bin\Sencha\Cmd\7.2.0.84/unicode-escapes.json
+                             cmd.version : 7.2.0.84                                          
+                            cmd.web.port : 1841                                              
+                     config.skipDownload : true                                              
+                      config.skipInherit : false                                             
+                        ext.license.name : dev                                               
+                     framework.build.dir : ${package.output.base}                            
+                     framework.classpath : ${package.dir}/src                                
+                    framework.cmd.minver : 7.2.0.66                                          
+                   framework.cmd.version : 7.2.0.66                                          
+                 framework.compatVersion : 7.2.0                                             
+                    framework.config.dir : C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\plugins\ext\current
+                       framework.creator : Sencha                                            
+           framework.detailedDescription : Sencha Ext JS JavaScript Framework                
+                           framework.dir : D:\work\git\master\client\ext                     
+                  framework.example.apps : admin-dashboard,executive-dashboard,feed-viewer,kitchensink,calendar,classic/desktop,classic/ticket-app,classic/portal,classic/simple-tasks,classic/responsive-app,classic/aria,modern/addressbook,modern/blackberry,modern/energy,modern/stockapp,modern/states,modern/geocongress,modern/oreilly
+                framework.example.apps.0 : admin-dashboard                                   
+                framework.example.apps.1 : executive-dashboard                               
+               framework.example.apps.10 : classic/aria                                      
+               framework.example.apps.11 : modern/addressbook                                
+               framework.example.apps.12 : modern/blackberry                                 
+               framework.example.apps.13 : modern/energy                                     
+               framework.example.apps.14 : modern/stockapp                                   
+               framework.example.apps.15 : modern/states                                     
+               framework.example.apps.16 : modern/geocongress                                
+               framework.example.apps.17 : modern/oreilly                                    
+                framework.example.apps.2 : feed-viewer                                       
+                framework.example.apps.3 : kitchensink                                       
+                framework.example.apps.4 : calendar                                          
+                framework.example.apps.5 : classic/desktop                                   
+                framework.example.apps.6 : classic/ticket-app                                
+                framework.example.apps.7 : classic/portal                                    
+                framework.example.apps.8 : classic/simple-tasks                              
+                framework.example.apps.9 : classic/responsive-app                            
+           framework.example.apps.length : 18                                                
+                  framework.example.path : examples,templates                                
+                framework.example.path.0 : examples                                          
+                framework.example.path.1 : templates                                         
+           framework.example.path.length : 2                                                 
+                        framework.format : 1                                                 
+                          framework.isV5 : true                                              
+                          framework.isV6 : true                                              
+                         framework.isV62 : true                                              
+                         framework.isV65 : true                                              
+     framework.language.js.input.version : ES5                                               
+                          framework.name : ext                                               
+                     framework.namespace : Ext                                               
+                        framework.output : ${package.dir}/build                              
+                     framework.overrides : ${package.dir}/overrides                          
+                  framework.packages.dir : D:\work\git\master\client\ext/packages/,D:\work\git\master\client\ext/${toolkit.name}
+                framework.resource.paths : resources                                         
+              framework.resource.paths.0 : resources                                         
+         framework.resource.paths.length : 1                                                 
+                      framework.sass.etc : ${package.dir}/sass/etc/all.scss                  
+                  framework.sass.fashion : true                                              
+                framework.sass.namespace : Ext                                               
+                      framework.sass.src : ${package.dir}/sass/src                           
+                      framework.sass.var : ${package.dir}/sass/var                           
+        framework.signatures.0.algorithm : SHA1withRSA                                       
+          framework.signatures.0.created : 2020-04-26T14:57:38Z                              
+             framework.signatures.0.name : Sencha                                            
+            framework.signatures.0.nonce : +M9WWKbO164=                                      
+        framework.signatures.0.signature : NLCAJyPxGFi2YRPeO1RBKGF1vSNSGoKOQesvyFg2L9AGc9RaY+EaI1nWgRZJYtFD3DgwjnPwGRe/KcS9+gxEKCnZpASy7LsQSxVF4mYWBflY/klErHOfrkZGt+OuW0jQaqLsjdgPpzrva3RXA9WBb67hdrGU2pfZ/tBZPXKbqlBRxcUxnVrvF1lkwhfUhUhveqQo9cdp007jo6zWJiSgSWNKrVstQAEae8xxNo/JdpNugieBT+M2fF+x7K3vG55HaePpX/fp3kG76hEPBw8CikM/8ImThUM98gM3Zw5kAHDb/IK3WUhzyNPCDW0MQ6HYVJAURh5xLVWutPQi+kL3aw==
+             framework.signatures.0.uuid : 1d6b0d9c-3333-4e65-885f-5b07a1fc3198              
+             framework.signatures.length : 1                                                 
+                   framework.subpkgs.dir : ${package.dir}                                    
+              framework.subpkgs.packages : classic/classic,modern/modern,packages/charts,packages/amf,packages/soap,packages/ux,packages/google,packages/legacy,packages/font-awesome,packages/font-pictos,packages/font-ext
+            framework.subpkgs.packages.0 : classic/classic                                   
+            framework.subpkgs.packages.1 : modern/modern                                     
+           framework.subpkgs.packages.10 : packages/font-ext                                 
+            framework.subpkgs.packages.2 : packages/charts                                   
+            framework.subpkgs.packages.3 : packages/amf                                      
+            framework.subpkgs.packages.4 : packages/soap                                     
+            framework.subpkgs.packages.5 : packages/ux                                       
+            framework.subpkgs.packages.6 : packages/google                                   
+            framework.subpkgs.packages.7 : packages/legacy                                   
+            framework.subpkgs.packages.8 : packages/font-awesome                             
+            framework.subpkgs.packages.9 : packages/font-pictos                              
+       framework.subpkgs.packages.length : 11                                                
+                       framework.summary : Ext JS                                            
+                          framework.type : framework                                         
+                       framework.version : 7.2.0.75                                          
+                       inspector.address : http://localhost:1839/                            
+                            minimal.mode : true                                              
+                    package.sass.dynamic : true                                              
+                          repo.local.dir : C:\Users\volod\bin\Sencha\Cmd\repo                
+                       shared.sencha.dir : true                                              
+        system.java.net.useSystemProxies : true                                              
+                          workspace.apps : src/web,src/ess                                   
+                        workspace.apps.0 : src/web                                           
+                        workspace.apps.1 : src/ess                                           
+                   workspace.apps.length : 2                                                 
+                     workspace.build.dir : D:\work\git\master\client/build                   
+                     workspace.classpath : D:\work\git\master\client/lib                     
+                   workspace.cmd.version : 7.0.0.40                                          
+                    workspace.config.dir : D:\work\git\master\client\.sencha\workspace       
+                           workspace.dir : D:\work\git\master\client                         
+           workspace.frameworks.ext.path : D:\work\git\master\client\ext                     
+        workspace.frameworks.ext.version : 7.2.0.75                                          
+                  workspace.packages.dir : D:\work\git\master\client/packages                
+              workspace.packages.extract : D:\work\git\master\client/packages/remote         
+                     workspace.theme.dir : D:\work\git\master\client/packages/${args.themeName}
+
+Exception information:
+=======================
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\plugin.xml:333: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\build-impl.xml:443: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\packager-impl.xml:17: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:106: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:156: The following error occurred while executing this line:
+jar:file:/C:/Users/volod/bin/Sencha/Cmd/7.2.0.84/sencha.jar!/com/sencha/ant/antlib.xml:671: shellscript returned: 1
+     at com.sencha.ant.AntScript.execute(AntScript.java:121)
+     at com.sencha.command.plugin.PluginManager.execute(PluginManager.java:104)
+     at com.sencha.command.plugin.PluginManager.executeReverseFirst(PluginManager.java:145)
+     at com.sencha.command.environment.BuildEnvironment.execute(BuildEnvironment.java:309)
+     at com.sencha.command.environment.AppOrPackageEnvironment.execute(AppOrPackageEnvironment.java:729)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.doExecute(BasePluginCommands.java:125)
+     at com.sencha.command.app.AppCommands$BuildCommand.execute(AppCommands.java:470)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.dispatch(BasePluginCommands.java:289)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:80)
+     at com.sencha.command.Sencha.main(Sencha.java:151)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+     at com.exe4j.runtime.WinLauncher.main(WinLauncher.java:94)
+     at com.install4j.runtime.launcher.WinLauncher.main(WinLauncher.java:25)
+   Caused by: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\build-impl.xml:443: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\packager-impl.xml:17: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:106: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:156: The following error occurred while executing this line:
+jar:file:/C:/Users/volod/bin/Sencha/Cmd/7.2.0.84/sencha.jar!/com/sencha/ant/antlib.xml:671: shellscript returned: 1
+     at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:551)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:444)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:217)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at com.sencha.ant.AntScript.execute(AntScript.java:117)
+     at com.sencha.command.plugin.PluginManager.execute(PluginManager.java:104)
+     at com.sencha.command.plugin.PluginManager.executeReverseFirst(PluginManager.java:145)
+     at com.sencha.command.environment.BuildEnvironment.execute(BuildEnvironment.java:309)
+     at com.sencha.command.environment.AppOrPackageEnvironment.execute(AppOrPackageEnvironment.java:729)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.doExecute(BasePluginCommands.java:125)
+     at com.sencha.command.app.AppCommands$BuildCommand.execute(AppCommands.java:470)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.dispatch(BasePluginCommands.java:289)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:80)
+     at com.sencha.command.Sencha.main(Sencha.java:151)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+     at com.exe4j.runtime.WinLauncher.main(WinLauncher.java:94)
+     at com.install4j.runtime.launcher.WinLauncher.main(WinLauncher.java:25)
+   Caused by: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\packager-impl.xml:17: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:106: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:156: The following error occurred while executing this line:
+jar:file:/C:/Users/volod/bin/Sencha/Cmd/7.2.0.84/sencha.jar!/com/sencha/ant/antlib.xml:671: shellscript returned: 1
+     at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:551)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:444)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:217)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at com.sencha.ant.AntScript.execute(AntScript.java:117)
+     at com.sencha.command.plugin.PluginManager.execute(PluginManager.java:104)
+     at com.sencha.command.plugin.PluginManager.executeReverseFirst(PluginManager.java:145)
+     at com.sencha.command.environment.BuildEnvironment.execute(BuildEnvironment.java:309)
+     at com.sencha.command.environment.AppOrPackageEnvironment.execute(AppOrPackageEnvironment.java:729)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.doExecute(BasePluginCommands.java:125)
+     at com.sencha.command.app.AppCommands$BuildCommand.execute(AppCommands.java:470)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.dispatch(BasePluginCommands.java:289)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:80)
+     at com.sencha.command.Sencha.main(Sencha.java:151)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+     at com.exe4j.runtime.WinLauncher.main(WinLauncher.java:94)
+     at com.install4j.runtime.launcher.WinLauncher.main(WinLauncher.java:25)
+   Caused by: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:106: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:156: The following error occurred while executing this line:
+jar:file:/C:/Users/volod/bin/Sencha/Cmd/7.2.0.84/sencha.jar!/com/sencha/ant/antlib.xml:671: shellscript returned: 1
+     at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:551)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:444)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:217)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at com.sencha.ant.AntScript.execute(AntScript.java:117)
+     at com.sencha.command.plugin.PluginManager.execute(PluginManager.java:104)
+     at com.sencha.command.plugin.PluginManager.executeReverseFirst(PluginManager.java:145)
+     at com.sencha.command.environment.BuildEnvironment.execute(BuildEnvironment.java:309)
+     at com.sencha.command.environment.AppOrPackageEnvironment.execute(AppOrPackageEnvironment.java:729)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.doExecute(BasePluginCommands.java:125)
+     at com.sencha.command.app.AppCommands$BuildCommand.execute(AppCommands.java:470)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.dispatch(BasePluginCommands.java:289)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:80)
+     at com.sencha.command.Sencha.main(Sencha.java:151)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+     at com.exe4j.runtime.WinLauncher.main(WinLauncher.java:94)
+     at com.install4j.runtime.launcher.WinLauncher.main(WinLauncher.java:25)
+   Caused by: The following error occurred while executing this line:
+C:\Users\volod\bin\Sencha\Cmd\7.2.0.84\ant\build\app\phonegap-impl.xml:156: The following error occurred while executing this line:
+jar:file:/C:/Users/volod/bin/Sencha/Cmd/7.2.0.84/sencha.jar!/com/sencha/ant/antlib.xml:671: shellscript returned: 1
+     at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:551)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:444)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:217)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at com.sencha.ant.AntScript.execute(AntScript.java:117)
+     at com.sencha.command.plugin.PluginManager.execute(PluginManager.java:104)
+     at com.sencha.command.plugin.PluginManager.executeReverseFirst(PluginManager.java:145)
+     at com.sencha.command.environment.BuildEnvironment.execute(BuildEnvironment.java:309)
+     at com.sencha.command.environment.AppOrPackageEnvironment.execute(AppOrPackageEnvironment.java:729)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.doExecute(BasePluginCommands.java:125)
+     at com.sencha.command.app.AppCommands$BuildCommand.execute(AppCommands.java:470)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.dispatch(BasePluginCommands.java:289)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:80)
+     at com.sencha.command.Sencha.main(Sencha.java:151)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+     at com.exe4j.runtime.WinLauncher.main(WinLauncher.java:94)
+     at com.install4j.runtime.launcher.WinLauncher.main(WinLauncher.java:25)
+   Caused by: The following error occurred while executing this line:
+jar:file:/C:/Users/volod/bin/Sencha/Cmd/7.2.0.84/sencha.jar!/com/sencha/ant/antlib.xml:671: shellscript returned: 1
+     at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:551)
+     at org.apache.tools.ant.taskdefs.MacroInstance.execute(MacroInstance.java:401)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:217)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at com.sencha.ant.AntScript.execute(AntScript.java:117)
+     at com.sencha.command.plugin.PluginManager.execute(PluginManager.java:104)
+     at com.sencha.command.plugin.PluginManager.executeReverseFirst(PluginManager.java:145)
+     at com.sencha.command.environment.BuildEnvironment.execute(BuildEnvironment.java:309)
+     at com.sencha.command.environment.AppOrPackageEnvironment.execute(AppOrPackageEnvironment.java:729)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.doExecute(BasePluginCommands.java:125)
+     at com.sencha.command.app.AppCommands$BuildCommand.execute(AppCommands.java:470)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.dispatch(BasePluginCommands.java:289)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:80)
+     at com.sencha.command.Sencha.main(Sencha.java:151)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+     at com.exe4j.runtime.WinLauncher.main(WinLauncher.java:94)
+     at com.install4j.runtime.launcher.WinLauncher.main(WinLauncher.java:25)
+   Caused by: shellscript returned: 1
+     at org.apache.tools.ant.taskdefs.ExecTask.runExecute(ExecTask.java:646)
+     at org.apache.tools.ant.taskdefs.ExecTask.runExec(ExecTask.java:672)
+     at org.apache.tools.ant.taskdefs.ExecTask.execute(ExecTask.java:498)
+     at net.sf.antcontrib.platform.ShellScriptTask.execute(ShellScriptTask.java:132)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.MacroInstance.execute(MacroInstance.java:398)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+     at com.sencha.ant.CallTask.execute(CallTask.java:137)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:442)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+     at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:217)
+     at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:154)
+     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     at org.apache.tools.ant.Task.perform(Task.java:348)
+     at org.apache.tools.ant.Target.execute(Target.java:392)
+     at org.apache.tools.ant.Target.performTasks(Target.java:413)
+     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     at com.sencha.ant.AntScript.execute(AntScript.java:117)
+     at com.sencha.command.plugin.PluginManager.execute(PluginManager.java:104)
+     at com.sencha.command.plugin.PluginManager.executeReverseFirst(PluginManager.java:145)
+     at com.sencha.command.environment.BuildEnvironment.execute(BuildEnvironment.java:309)
+     at com.sencha.command.environment.AppOrPackageEnvironment.execute(AppOrPackageEnvironment.java:729)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.doExecute(BasePluginCommands.java:125)
+     at com.sencha.command.app.AppCommands$BuildCommand.execute(AppCommands.java:470)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.command.BasePluginCommands$BasePluginCommand.dispatch(BasePluginCommands.java:289)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:80)
+     at com.sencha.command.Sencha.main(Sencha.java:151)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     at java.lang.reflect.Method.invoke(Method.java:498)
+     at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+     at com.exe4j.runtime.WinLauncher.main(WinLauncher.java:94)
+     at com.install4j.runtime.launcher.WinLauncher.main(WinLauncher.java:25)
+

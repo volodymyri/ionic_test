@@ -1,0 +1,17 @@
+.in-out-button {
+  width: 50%!important;
+  height: 68px;
+  font-size: 21px;
+  margin: 20px auto;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px !important;
+
+  &.started {
+    background-color: $criterion-workflow-rejected;
+  }
+
+  &.stopped {
+    background-color: $criterion-workflow-approved;
+  }
+}

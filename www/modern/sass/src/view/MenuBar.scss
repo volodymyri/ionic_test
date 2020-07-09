@@ -1,0 +1,62 @@
+.ess-modern-menubar {
+  background-color: $criterion-menu-bg-color;
+  border: 0;
+
+  color: white;
+
+  &.x-big {
+    padding: 1.4em;
+  }
+
+  .x-button {
+    border: none;
+    background-color: transparent;
+    border: none;
+    color: $criterion-menu-color !important;
+    font-weight: normal;
+    font-size: 15px;
+
+    .x-icon-el {
+      color: $criterion-menu-color !important;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    .x-inner-el {
+      background-color: transparent !important;
+    }
+
+  }
+
+  .x-title {
+    color: white;
+    font-weight: normal;
+    font-size: 17px;
+    margin-top: 5px;
+
+    .x-innerhtml {
+      text-align: center;
+    }
+  }
+
+  .x-titlebar-left {
+    .x-title {
+      max-width: 70vw;
+    }
+  }
+
+  .two-lines {
+    &.one {
+      font-size: 17px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &.two {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+}

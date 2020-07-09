@@ -1,0 +1,123 @@
+.ess-pay-history-info {
+
+  .info-header {
+
+    .x-layout-box {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .header-type {
+      width: 70%;
+      padding: 10px 0 10px 20px;
+      border-right: 1px solid #EEE;
+      border-top: 2px solid #EEE;
+      border-bottom: 2px solid #EEE;
+    }
+
+    .header-amount {
+      width: 30%;
+      text-align: right;
+      padding: 10px 15px 10px 0;
+      border-top: 2px solid #EEE;
+      border-bottom: 2px solid #EEE;
+    }
+  }
+
+  .x-form-inner, .x-formpanel-body-el {
+    background: #F9F9FD;
+  }
+
+  .info-block-title {
+    .x-innerhtml {
+      font-weight: bold;
+      position: relative;
+      cursor: pointer;
+      padding-left: 11px;
+      font-size: 1.1em;
+
+      .title {
+        position: absolute;
+        top: 14px;
+        left: 68px;
+        font-weight: 600;
+        font-size: 15px;
+        color: #343C4F;
+      }
+
+      .title-right {
+        position: absolute;
+        top: 14px;
+        right: 45px;
+        font-weight: 600;
+        font-size: 15px;
+        color: #909AB5;
+      }
+
+      i.x-fa {
+        position: absolute;
+        top: 13px;
+        right: 15px;
+
+        font-style: normal;
+        font-weight: normal;
+        color: #0096EC;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .x-dataview-item {
+    &:last-child {
+      .info-block-name {
+      }
+
+      .info-block-value {
+      }
+    }
+  }
+
+  .info-block-wrapper {
+    padding: 0 12px;
+    border-top: 0.5px solid #CED3DF;
+
+    &.no-border-top {
+      border-top: none;
+    }
+  }
+
+  .info-block {
+    width: 100%;
+
+    border-bottom: 0.5px solid rgba(144, 154, 181, 0.3);
+
+    &.pay-notes {
+      border-left: 3px solid #0096EB;
+      border-bottom: none;
+      background-color: rgba(229, 232, 237, 0.5);
+      border-radius: 0 10px 10px 0;
+      padding: 10px 10px 5px;
+      margin-bottom: 10px;
+    }
+
+    .info-block-name {
+      width: 70%;
+      font-weight: normal;
+      font-size: 15px;
+      color: #343C4F;
+    }
+
+    .info-block-sub {
+      font-size: 14px;
+      color: #909AB5;
+    }
+
+    .info-block-value {
+      width: 30%;
+      padding: 10px 0 10px 5px;
+      text-align: right;
+      font-weight: 600;
+      font-size: 15px;
+      color: #343C4F;
+    }
+  }
+}
