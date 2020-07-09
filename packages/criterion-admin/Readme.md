@@ -1,2 +1,0 @@
-# criterion.classic - Read Me
-

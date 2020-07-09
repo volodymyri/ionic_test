@@ -1,1 +1,0 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4cc8f9cf080e451083bc2b89399f2b25)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CriterionHCM/client&amp;utm_campaign=Badge_Grade)

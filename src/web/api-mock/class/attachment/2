@@ -1,9 +1,0 @@
-{
-    "result" : {
-        "id" : 2,
-        "classId" : 1,
-        "attachmentTypeCd" : "CLASS_READING",
-        "name" : "Test"
-    },
-    "success" : true
-}
