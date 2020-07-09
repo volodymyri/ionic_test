@@ -1,0 +1,53 @@
+.criterion-review-goal-competency-info {
+
+
+  .#{$prefix}title-text.#{$prefix}title-item {
+    font-size: 22px !important;
+    font-weight: $criterion-font-weight-semibold !important;
+    color: $criterion-black !important;
+  }
+
+  .description {
+    font-weight: $criterion-font-weight-regular;
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
+
+  .scales {
+    .scale-item {
+      padding: 20px 0;
+      border-top: 1px solid #ebecee;
+
+      .name {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: $criterion-font-weight-bold;
+      }
+
+      .rating {
+        float: right;
+        font-weight: $criterion-font-weight-semibold;
+        font-size: 15px;
+        line-height: 22px;
+
+        .label {
+          color: $criterion-dark-gray;
+        }
+      }
+
+      .description {
+        margin-top: 10px;
+        font-weight: $criterion-font-weight-regular;
+        font-size: 15px;
+        line-height: 22px;
+        color: $criterion-black;
+      }
+    }
+
+    .x-view-item-focused {
+      outline: none !important;
+      outline-offset: 0;
+    }
+  }
+
+}

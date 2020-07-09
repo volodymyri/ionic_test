@@ -1,0 +1,47 @@
+.ess-modern-community-post-editor {
+  .x-docked-bottom {
+    border: 0 !important;
+    border-top: 1px solid #DDD !important;
+
+    .x-button {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      border: none;
+      font-size: 16px;
+
+      display: inline-block;
+      color: white;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      font-weight: bold;
+      background-color: #007cc2;
+      max-height: 35px;
+
+      .x-button-label {
+        text-align: center;
+      }
+
+      &.x-disabled {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .button-panel {
+    min-height: 55px;
+    background-color: #f5f5f5 !important;
+
+    .x-panel-inner {
+      background-color: #f5f5f5 !important;
+    }
+
+    .badge-img {
+      margin: 5px 0 0 15px;
+    }
+  }
+}

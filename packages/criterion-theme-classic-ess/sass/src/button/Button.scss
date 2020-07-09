@@ -1,0 +1,277 @@
+.criterion-ess-main {
+  .criterion-btn-feature {
+    .x-btn-inner {
+      font-size: 13px;
+      font-weight: $criterion-font-weight-semibold;
+      text-transform: uppercase;
+      padding: 3px 15px;
+    }
+
+    &.criterion-btn-feature-small {
+      padding: 2px;
+    }
+  }
+
+  .criterion-btn-additional-feature {
+    @include criterion-button($criterion-remove-color, $criterion-remove-color, white, transparent, $criterion-button-border-radius);
+
+    .x-btn-inner {
+      font-size: 13px;
+      font-weight: $criterion-font-weight-semibold;
+      text-transform: uppercase;
+      padding: 3px 15px;
+    }
+
+    &.criterion-btn-feature-small {
+      padding: 2px;
+    }
+  }
+
+  .criterion-btn-light {
+    @include criterion-button(transparent, transparent, $criterion-button-light-color, transparent, $criterion-button-border-radius); // todo fix hardcoded colors
+    @include box-shadow(none !important);
+  }
+
+  .criterion-btn-remove { // for buttons like "delete", "remove" and so on
+    @include criterion-button($criterion-remove-color, $criterion-remove-color, white, transparent, $criterion-button-border-radius);
+  }
+
+  .criterion-btn-like-link {
+    &.criterion-ess-sub-link {
+      padding: 0;
+
+      .x-btn-inner {
+        padding: 0;
+        color: #555 !important;
+        text-decoration: none !important;
+      }
+
+      &.active {
+        .x-btn-inner {
+          color: $criterion-ess-base-color !important;
+        }
+      }
+    }
+  }
+}
+
+.criterion-btn-start-task {
+  @include criterion-button(transparent, transparent, $base-color, $base-color, $criterion-button-border-radius);
+}
+
+.criterion-btn-stop-task {
+  @include criterion-button(transparent, transparent, $criterion-button-bazaar-color, $criterion-button-bazaar-color, $criterion-button-border-radius);
+}
+
+@include extjs-button-small-ui(
+        $ui: 'feature',
+        $font-size: $criterion-button-font-size,
+        $font-weight: $criterion-button-font-weight,
+        $border-radius: 3px,
+        $padding: 4px 12px 3px 12px,
+        $text-padding: 12px
+);
+
+@mixin extjs-button-light-ui() {
+  @include extjs-button-small-ui(
+          $ui: 'light',
+          $font-size: $criterion-button-font-size,
+          $font-weight: $criterion-button-font-weight,
+          $padding: $criterion-button-light-padding,
+          $text-padding: $criterion-button-light-text-padding,
+          $border-radius: 3px,
+          $background-color: rgba(0, 0, 0, 0),
+          $background-color-over: rgba(0, 0, 0, 0.05),
+          $color: $warm-grey,
+          $glyph-color: $battleship-grey,
+          $glyph-font-size: 24px
+  );
+}
+
+@include extjs-button-light-ui();
+
+@mixin extjs-button-secondary-ui() {
+  @include extjs-button-small-ui(
+          $ui: 'secondary',
+          $font-size: $criterion-secondary-button-font-size,
+          $font-weight: $criterion-button-font-weight,
+          $border-radius: 3px,
+          $background-color: rgba(0, 0, 0, 0.03),
+          $background-color-over: rgba(0, 0, 0, 0.1),
+          $color: $battleship-grey,
+          $glyph-color: $battleship-grey,
+          $glyph-font-size: 18px,
+          $padding: 4px 2px 3px 2px,
+          $text-padding: 9px
+  );
+  .#{$prefix}btn-text.#{$prefix}btn-icon-right > .#{$prefix}btn-icon-el-secondary-small {
+    margin-right: 9px;
+  }
+}
+
+@include extjs-button-secondary-ui();
+
+@include extjs-button-small-ui(
+        $ui: 'remove',
+        $font-size: $criterion-button-font-size,
+        $font-weight: $criterion-button-font-weight,
+        $border-radius: 3px,
+        $background-color: $criterion-remove-color,
+        $background-color-over: $criterion-remove-color-over
+);
+
+@include extjs-button-small-ui(
+        $ui: 'compact',
+        $padding: $button-compact-padding
+);
+
+@include extjs-button-small-ui(
+        $ui: 'glyph',
+        $background-color: $transparent-color,
+        $background-color-pressed: $transparent-color,
+        $border-width: 0px,
+        $padding: $button-glyph-padding,
+        $text-padding: 2px,
+        $glyph-color: $button-glyph-color,
+        $glyph-font-size: $button-glyph-font-size,
+        $font-size: $button-glyph-font-size,
+        $line-height: $button-glyph-line-height
+);
+
+@include extjs-button-small-ui(
+        $ui: 'frame',
+        $background-color: $transparent-color,
+        $background-color-pressed: $transparent-color,
+        $border-width: 1px,
+        $border-radius: 3px,
+        $border-color: $base-color,
+        $color: $base-color,
+        $padding: 4px 2px 3px 2px,
+        $text-padding: 2px
+);
+
+@include extjs-button-small-ui(
+        $ui: 'act',
+        $background-color: $transparent-color,
+        $background-color-pressed: $transparent-color,
+        $border-width: 0px,
+        $padding: $button-glyph-padding,
+        $text-padding: 2px,
+        $glyph-color: $button-glyph-color,
+        $glyph-font-size: 20px,
+        $font-size: 20px,
+        $line-height: $button-glyph-line-height
+);
+
+.#{$prefix}btn-glyph-small.#{$prefix}btn-pressed {
+  .#{$prefix}btn-icon-el-glyph-small {
+    color: $criterion-ess-base-color;
+  }
+}
+
+.#{$prefix}btn-default-small,
+.#{$prefix}btn-compact-small,
+.#{$prefix}btn-remove-small {
+  @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.2));
+}
+
+.#{$prefix}btn-feature-small {
+  @include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.1));
+  text-transform: uppercase;
+
+  .#{$prefix}btn-arrow-el {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+.#{$prefix}datepicker-header .#{$prefix}btn-default-small,
+.post-message-button, .criterion-btn-transparent {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.#{$prefix}btn-secondary-small {
+  text-transform: uppercase;
+}
+
+.criterion-btn-transparent {
+  min-height: 29px;
+
+  .#{$prefix}btn-glyph {
+    margin-top: 3px;
+  }
+}
+
+.criterion-btn-glyph-only {
+  @include criterion-button(transparentize($base-color, 0.92), transparentize($base-color, 0.82), $base-color, transparent, 18px);
+
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+
+  .#{$prefix}btn-icon-el-default-medium, .#{$prefix}btn-icon-el-default-toolbar-medium {
+    font-size: 22px;
+    font-weight: $criterion-font-weight-semibold;
+  }
+}
+
+.criterion-btn-glyph-only-small {
+  @include criterion-button(transparentize($base-color, 0.92), transparentize($base-color, 0.82), $base-color, transparent, 12px);
+
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+
+  .#{$prefix}btn-icon-el-default-small,
+  .#{$prefix}btn-icon-el-default-toolbar-small {
+    font-size: 24px;
+    font-weight: $criterion-font-weight-semibold;
+    right: 5px;
+    top: 5px;
+  }
+
+  &.#{$prefix}btn-default-small {
+    padding: 0;
+    border: none;
+  }
+}
+
+//TODO Use UI property
+.criterion-plain-toggle-btn {
+  border: none;
+  background: transparent !important;
+  padding: 14px 0 !important;
+  margin-right: 18px !important;
+
+  .x-btn-inner-default-toolbar-small {
+    font-size: 15px;
+    font-weight: 600;
+    color: $criterion-button-text-color !important;
+    padding: 0;
+  }
+
+  border-bottom: 4px solid transparent;
+
+  &.x-btn-pressed {
+    background: transparent !important;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: $criterion-ess-base-color !important;
+
+    .x-btn-inner-default-toolbar-small {
+      color: $criterion-ess-base-color !important;
+    }
+  }
+
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  box-shadow: none !important;
+
+  //TODO Check Over
+  //&.x-btn-over .x-btn-inner {
+  //  color: $criterion-ess-base-color;
+  //}
+}

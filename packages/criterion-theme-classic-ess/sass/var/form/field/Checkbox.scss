@@ -1,0 +1,9 @@
+$form-checkbox-glyph: dynamic($ionicon-var-android-checkbox-outline-blank 16px $font-icon-font-family);
+$form-checkbox-checked-glyph: dynamic($ionicon-var-android-checkbox 16px $font-icon-font-family);
+
+$form-checkbox-glyph-color: dynamic($silver);
+
+$form-radio-glyph: dynamic($ionicon-var-android-radio-button-off 16px $font-icon-font-family);
+$form-radio-checked-glyph: dynamic($ionicon-var-android-radio-button-on 16px $font-icon-font-family);
+$form-radio-glyph-color: dynamic($silver);
+

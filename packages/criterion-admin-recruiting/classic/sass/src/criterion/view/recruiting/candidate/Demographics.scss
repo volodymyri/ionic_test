@@ -1,0 +1,56 @@
+.criterion_recruiting_candidate_demographics {
+
+  .criterion-list-item-icon {
+    &:before {
+      padding-top: 0;
+      font-size: 18px;
+      width: 15px;
+      margin-right: 5px;
+      text-align: center;
+    }
+  }
+
+  .x-form-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .x-form-text-default, .x-form-item-body-default {
+    min-height: 16px !important;
+  }
+
+  .x-form-item-label-default {
+    padding-top: 0;
+    min-height: 16px !important;
+  }
+
+  .x-form-display-field-default {
+    min-height: 16px !important;
+    margin-top: 0;
+  }
+
+  .x-form-text-wrap {
+    width: 100%;
+
+    &:after {
+      top: 0;
+      left: 0;
+    }
+  }
+  .x-form-trigger-default {
+    left: 0;
+    padding: 7px 0;
+  }
+
+  .criterion-hidden-value-hidden-state {
+    .x-form-trigger-default {
+      &.hide-value-trigger:after {
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .x-form-text-default.x-webkit-border-box-bug {
+    height: 100%;
+  }
+}

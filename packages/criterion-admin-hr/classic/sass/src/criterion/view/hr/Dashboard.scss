@@ -1,0 +1,69 @@
+.criterion-hr-dashboard {
+  .widget-container {
+    & > .x-panel > .x-panel-bodyWrap > .x-panel-body-default {
+      background-color: transparent;
+    }
+
+    background-color: #F8F8F8;
+    padding: 18px;
+  }
+
+  .criterion-empty-chart {
+    border: 1px dotted rgba(0, 0, 0, 0.1);
+
+    .criterion-btn-transparent {
+      .x-btn-glyph {
+        color: rgba(0, 0, 0, 0.1) !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  .criterion-hr-dashboard-panel-item-config {
+    color: #cfcfcf;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    border: none !important;
+    background: transparent !important;
+
+    .x-btn-glyph {
+      color: inherit;
+      font-size: 12px;
+    }
+  }
+
+  .x-legend {
+    .x-legend-inner {
+      display: flex;
+      text-align: left;
+      align-items: center;
+
+      .x-legend-container {
+        width: 100%;
+      }
+
+      .x-legend-item {
+        color: #3c3c3c;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: $font-family;
+        border: none;
+        padding: 0.3em 1.5em 0.3em 1.4em;
+        max-width: none;
+
+        .x-legend-item-marker {
+          border-radius: 50%;
+          left: 0;
+          top: 0.5em;
+          box-shadow: none;
+        }
+
+        &.x-view-item-focused {
+          outline: none !important;
+          outline-offset: 0;
+        }
+      }
+    }
+  }
+}

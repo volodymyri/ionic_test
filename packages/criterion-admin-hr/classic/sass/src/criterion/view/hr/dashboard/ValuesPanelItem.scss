@@ -1,0 +1,62 @@
+@-moz-keyframes values-spin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes values-spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+@-o-keyframes values-spin {
+  0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(359deg); }
+}
+@-ms-keyframes values-spin {
+  0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(359deg); }
+}
+@keyframes values-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+.criterion-hr-dashboard-values-panel-item {
+  padding: 5px;
+
+  &-wrap {
+    padding: 20px 18px 17px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: $panel-header-color;
+  }
+
+  &-value {
+    padding-bottom: 7px;
+    font-size: 24px;
+
+    &.ion-refreshing {
+      &:after {
+        display: inline-block;
+        font-family: Ionicons;
+        content: $ionicon-var-ios7-loop-strong;
+        font-size: 20px;
+        line-height: 13px;
+
+        -webkit-animation: values-spin 3s infinite linear;
+        -moz-animation: values-spin 3s infinite linear;
+        -o-animation: values-spin 3s infinite linear;
+        animation: values-spin 3s infinite linear;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 12px;
+  }
+
+  &-value, &-title {
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

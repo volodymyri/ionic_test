@@ -1,0 +1,18 @@
+{
+	"result": [{
+		"id": 1,
+		"name": "Acumatica",
+		"vendor": "Home Vendor",
+		"version": 1.2,
+		"endpoint": "custom_java_plugin",
+		"responseFormat" : 2
+	}, {
+		"id": 2,
+		"name": "Intacct",
+		"vendor": "Home Vendor",
+		"version": 1.2,
+		"endpoint": "sage_integration",
+        "responseFormat" : 1
+	}],
+	"success": true
+}

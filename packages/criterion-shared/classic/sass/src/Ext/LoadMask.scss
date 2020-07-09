@@ -1,0 +1,85 @@
+@keyframes criterion-dot-move {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes criterion-dot-move {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+}
+
+.x-mask.loadmask .loading-dots {
+  display: none;
+}
+
+.x-mask.loadmask.show-dots .loading-dots {
+  display: block;
+  color: #c0c0c0;
+  font-family: calibri, arial, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  width: 100%;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  label {
+    display: inline-block;
+  }
+}
+
+.x-mask.loadmask .loading-dots label:nth-child(6) {
+  -webkit-animation: criterion-dot-move 3s infinite ease-in-out;
+  animation: criterion-dot-move 3s infinite ease-in-out;
+}
+
+.x-mask.loadmask .loading-dots label:nth-child(5) {
+  -webkit-animation: criterion-dot-move 3s 100ms infinite ease-in-out;
+  animation: criterion-dot-move 3s 100ms infinite ease-in-out;
+}
+
+.x-mask.loadmask .loading-dots label:nth-child(4) {
+  -webkit-animation: criterion-dot-move 3s 200ms infinite ease-in-out;
+  animation: criterion-dot-move 3s 200ms infinite ease-in-out;
+}
+
+.x-mask.loadmask .loading-dots label:nth-child(3) {
+  -webkit-animation: criterion-dot-move 3s 300ms infinite ease-in-out;
+  animation: criterion-dot-move 3s 300ms infinite ease-in-out;
+}
+
+.x-mask.loadmask .loading-dots label:nth-child(2) {
+  -webkit-animation: criterion-dot-move 3s 400ms infinite ease-in-out;
+  animation: criterion-dot-move 3s 400ms infinite ease-in-out;
+}
+
+.x-mask.loadmask .loading-dots label:nth-child(1) {
+  -webkit-animation: criterion-dot-move 3s 500ms infinite ease-in-out;
+  animation: criterion-dot-move 3s 500ms infinite ease-in-out;
+}

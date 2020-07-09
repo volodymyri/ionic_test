@@ -1,0 +1,13 @@
+//$rating-picker-color: rgb(96, 169, 23) !default;
+//$rating-picker-color: #FFE850 !default;
+$rating-picker-color: dynamic(#ccc);
+
+$rating-picker-hover-color: dynamic($rating-picker-color);
+
+$rating-picker-selected-color: dynamic($criterion-ess-base-color);
+
+$rating-picker-selected-hover-color: dynamic(inherit);
+
+$rating-picker-opacity: dynamic(0.8);
+
+$rating-picker-hover-opacity: dynamic(1);

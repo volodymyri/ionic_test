@@ -1,0 +1,20 @@
+.#{$prefix}gridcolumn {
+
+  & > .#{$prefix}header-el:before {
+    content: '';
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    background-color: $criterion-dark-gray;
+    right: 5px
+  }
+
+  &.workflow-cell-header, &.recurring-cell-header {
+    min-width: 10px !important;
+    padding: 0 !important;
+
+    & > .#{$prefix}header-el:before {
+      display: none;
+    }
+  }
+}

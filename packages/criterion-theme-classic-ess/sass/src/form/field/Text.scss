@@ -1,0 +1,172 @@
+.criterion-search-field {
+  .x-form-trigger-wrap-default {
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid transparent;
+
+    input {
+      font-size: 14px;
+      font-weight: $criterion-font-weight-semibold;
+      color: $dark;
+      padding: 5px 15px;
+
+      &::-webkit-input-placeholder {
+        color: $warm-grey;
+        font-size: 14px;
+      }
+    }
+
+    .criterion-search-trigger {
+      @include criterion-form-trigger('\f4a5', $criterion-black, transparent);
+
+      border: 0 !important;
+
+      &:after {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@mixin extjs-search-field-ui(
+  $ui: 'search',
+  $ui-font-weight: 400,
+  $ui-background-color: $criterion-form-search-field-background,
+  $ui-border-width: $form-text-field-border-width,
+  $ui-border-style: $form-text-field-border-style,
+  $ui-border-color: $form-text-field-border-color,
+  $ui-padding: 4px 2px 4px 15px,
+  $ui-border-radius: 100px,
+  $ui-height: 27px,
+  $ui-body-width: 258px
+) {
+  @include extjs-text-field-ui(
+          $ui: $ui,
+          $ui-font-weight: $ui-font-weight,
+          $ui-background-color: $ui-background-color,
+          $ui-border-width: $ui-border-width,
+          $ui-border-style: $ui-border-style,
+          $ui-border-color: $ui-border-color,
+          $ui-padding: $ui-padding,
+          $ui-border-radius: $ui-border-radius,
+          $ui-height: $ui-height,
+          $ui-trigger-background-color: transparent,
+          $ui-body-width: $ui-body-width
+  );
+
+  .#{$prefix}form-trigger-wrap-search {
+    background-color: $ui-background-color;
+    padding-right: 13px;
+  }
+
+  //todo refactor and remove @if
+  @if $ui == 'search-alt' {
+    .#{$prefix}form-search-trigger-#{$ui} {
+      padding: 5px 0 0 10px;
+    }
+
+    .#{$prefix}form-text-wrap-#{$ui} {
+      border: 1px solid transparent;
+
+      //&.#{$prefix}form-text-wrap-focus {
+      //  border-color: $form-text-field-focus-border-color !important;
+      //}
+    }
+    .#{$prefix}field-search-alt {
+      .#{$prefix}form-trigger-wrap-focus {
+        border-color: transparent !important;
+      }
+    }
+  }
+}
+
+@include extjs-search-field-ui(
+        $ui: 'search',
+        $ui-background-color: null
+);
+
+@include extjs-search-field-ui(
+        $ui: 'search-alt',
+        $ui-background-color: $criterion-form-search-field-background,
+        $ui-border-radius: null,
+        $ui-border-color: transparent
+);
+
+@include extjs-text-field-ui(
+        $ui: 'secondary',
+        $ui-background-color: rgba(0, 0, 0, 0.03),
+        $ui-border-radius: 3px,
+        $ui-font-weight: $criterion-font-weight-semibold,
+        $ui-font-size: 13px,
+        $ui-color: $battleship-grey,
+        $ui-padding: 4px 12px 5px 15px,
+        $ui-height: 27px,
+        $ui-trigger-background-color: rgba(0, 0, 0, 0.03)
+);
+
+@include extjs-label-ui(
+        $ui: 'secondary',
+        $ui-font-color: $battleship-grey,
+        $ui-font-weight: $criterion-font-weight-semibold,
+        $ui-height: 27px,
+        $ui-font-size: 13px,
+        $ui-line-height: 13px
+);
+
+.#{$prefix}form-search-trigger {
+  @include font-icon($form-search-trigger-glyph, $line-height: null);
+  color: $criterion-form-search-trigger-glyph-color;
+}
+
+.#{$prefix}field {
+  &.#{$prefix}item-disabled, &.#{$prefix}form-readonly {
+    .#{$prefix}form-trigger-wrap-mini {
+      background-color: $criterion-disabled-field-background;
+      input {
+        opacity: $criterion-disabled-field-opacity;
+      }
+    }
+  }
+}
+
+.#{$prefix}form-trigger-clock {
+  background: $criterion-white !important;
+}
+
+@include extjs-text-field-ui(
+        $ui: 'mini',
+        $ui-height: 28px,
+        $ui-font-size: 13px,
+        $ui-font-weight: $criterion-font-weight-regular,
+        $ui-color: $dark,
+        $ui-background-color: $criterion-white,
+        $ui-padding: $form-mini-field-padding,
+        $ui-trigger-background-color: transparent
+);
+
+.#{$prefix}field {
+  &.#{$prefix}item-disabled, &.#{$prefix}form-readonly {
+    .#{$prefix}form-trigger-wrap-mini {
+      background-color: $criterion-disabled-field-background;
+      input {
+        //opacity: $criterion-disabled-field-opacity;
+        opacity: 1;
+      }
+    }
+
+    .#{$prefix}form-text-mini {
+      background-color: $criterion-b-gray !important;
+      color: $dark !important;
+    }
+  }
+}
+
+.#{$prefix}form-dirty {
+  .#{$prefix}form-trigger-wrap,
+  .#{$prefix}form-trigger-wrap-mini {
+    .#{$prefix}form-field{
+      transition: background-color 0.1s ease;
+    }
+    transition: background-color 0.1s ease;
+  }
+}

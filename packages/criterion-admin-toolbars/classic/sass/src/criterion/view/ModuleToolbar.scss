@@ -1,0 +1,171 @@
+.criterion-moduletoolbar {
+
+  .module-text {
+    font-size: 15px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .x-btn-glyph {
+    opacity: 1 !important;
+  }
+
+  .x-btn-arrow-right {
+    & > .x-btn-icon {
+      padding-right: 5px !important;
+    }
+
+    &:after {
+      content: $ionicon-var-arrow-down-b;
+      color: $criterion-app-toolbar-admin-font-color;
+      width: auto;
+      display: inline-block;
+      font-family: Ionicons;
+      background: none;
+      font-size: 11px;
+      padding: 8px 6px 0 1px;
+      text-shadow: none;
+    }
+  }
+
+  .criterion-moduletoolbar-btn-primary {
+    .x-btn-inner {
+      font-size: $font-size;
+    }
+  }
+
+  .criterion-hr &, .criterion-payroll &, .criterion-recruiting &, .criterion-scheduling & {
+    background-color: $criterion-app-toolbar-admin-background;
+
+    .criterion-moduletoolbar-btn-primary {
+      @include criterion-moduletoolbar-button-arrow(
+              $criterion-app-toolbar-admin-font-color, $criterion-app-toolbar-admin-font-active-color,
+              $criterion-app-toolbar-admin-background, $criterion-app-toolbar-admin-background-active,
+              $criterion-app-toolbar-admin-border, $criterion-app-toolbar-admin-border-active
+      );
+    }
+    .criterion-moduletoolbar-btn-secondary {
+
+      &.criterion-moduletoolbar-user {
+        @include criterion-moduletoolbar-button(
+                        $criterion-app-toolbar-sse-secondary-font-color, $criterion-app-toolbar-sse-secondary-font-active-color,
+                        transparent, $criterion-app-toolbar-sse-secondary-background-active,
+                        transparent, $criterion-app-toolbar-sse-secondary-border-active
+        );
+        padding: 14px;
+      }
+
+      &:not(.criterion-moduletoolbar-user) {
+        @include criterion-moduletoolbar-button-arrow(
+                        $criterion-app-toolbar-admin-secondary-font-color, $criterion-app-toolbar-admin-secondary-font-active-color,
+                        $criterion-app-toolbar-admin-secondary-background, $criterion-app-toolbar-admin-secondary-background-active,
+                        $criterion-app-toolbar-admin-secondary-border, $criterion-app-toolbar-admin-secondary-border-active
+        );
+        padding: 14px;
+      }
+
+    }
+  }
+
+  .criterion-selfservice & {
+    background-color: $criterion-app-toolbar-sse-background;
+
+    .criterion-moduletoolbar-btn-primary {
+      @include criterion-moduletoolbar-button(
+              $criterion-app-toolbar-sse-font-color, $criterion-app-toolbar-sse-font-active-color,
+              transparent, $criterion-app-toolbar-sse-background-active,
+              $criterion-app-toolbar-sse-border, $criterion-app-toolbar-sse-border-active
+      );
+    }
+    .criterion-moduletoolbar-btn-secondary {
+      @include criterion-moduletoolbar-button(
+              $criterion-app-toolbar-sse-secondary-font-color, $criterion-app-toolbar-sse-secondary-font-active-color,
+              transparent, $criterion-app-toolbar-sse-secondary-background-active,
+              $criterion-app-toolbar-sse-secondary-border, $criterion-app-toolbar-sse-secondary-border-active
+      );
+    }
+  }
+
+  .criterion-moduletoolbar-ess-actions {
+    &::before {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      transform: rotate(90deg);
+      color: $base-color;
+    }
+  }
+
+  &-menu {
+    border: none;
+
+    .x-menu-item-text-default {
+      padding-left: 14px;
+      padding-right: 30px;
+    }
+
+    .x-bull {
+      font-size: 25px;
+      vertical-align: bottom;
+      padding-right: 3px;
+    }
+
+    .x-menu-item-text {
+      margin: 5px 15px 5px 15px;
+      font-size: 15px;
+    }
+
+    .with-glyph {
+      .x-menu-item-text {
+        margin-left: 40px;
+      }
+
+      .x-menu-item-glyph {
+        width: auto;
+        height: auto;
+        top: 11px;
+        left: 15px;
+        font-size: 20px;
+      }
+    }
+
+    .criterion-ess-toolbar-ess-user-menu-user {
+      .user-name {
+        font-weight: bold;
+      }
+    }
+
+    .criterion-moduletoolbar-ess-actions-timer {
+      &-started {
+        color: $base-color;
+        padding-left: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      &-stopped {
+        color: $criterion-darken-gray;
+        padding-left: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    &.criterion-hr, &.criterion-payroll, &.criterion-recruiting, &.criterion-scheduling {
+      @include criterion-moduletoolbar-menu(
+              $criterion-app-toolbar-admin-font-color, $criterion-app-toolbar-admin-font-active-color,
+              $criterion-app-toolbar-admin-background, $criterion-app-toolbar-admin-background-active
+      );
+    }
+
+    border-top : 4px solid lighten($base-color, 10);
+    padding: 10px;
+
+    &.criterion-selfservice {
+      @include criterion-moduletoolbar-menu(
+              $color, $base-color,
+              white, white
+      );
+    }
+  }
+}

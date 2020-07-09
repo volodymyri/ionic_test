@@ -1,0 +1,160 @@
+// font-awesome package fix. added shared folder path
+$output-paths: ("path": "../resources", "shared": "../../resources");
+
+$criterion-green: #6aa84f;
+$criterion-black: #343C4F;
+$criterion-white: #FFFFFF;
+$criterion-blue: #0096EB;
+$criterion-dark-blue: #0064B4;
+$criterion-orange: #ff8d01;
+$criterion-red: #FF2741;
+$criterion-gray: #CED3DF;
+$criterion-light-gray: #E5E8ED;
+$criterion-b-gray: #F9F9FD;
+$criterion-dark-gray: #909AB5;
+
+$criterion-darken-gray: #999999;
+$criterion-border-light-grey: #E2E2E2;
+
+$criterion-ess-base-color: $criterion-blue;
+$criterion-green-d: #64BE0F;
+$criterion-yellow: #FFEB3B;
+
+// buttons
+$criterion-light-blue: #EBF7FD;
+
+//shared colors
+$dark: #282e3a;
+$battleship-grey: #787c85;
+
+$criterion-override-value-mark: rgba(255, 255, 0, 0.13);
+
+// icons
+$criterion-icon-enabled-color: $criterion-green;
+$criterion-icon-enabled-color-over: $criterion-green;
+$criterion-icon-warning-color: $criterion-red;
+$criterion-icon-warning-color-over: $criterion-red;
+$criterion-icon-disabled-color: $criterion-gray;
+$criterion-icon-disabled-color-over: $criterion-gray;
+
+// custom scroller
+$criterion-scroller-bg-color: #363d4d;
+
+// custom theme variables
+$criterion-container-background: #fff !default;
+$criterion-container-alternative-background: #303030 !default;
+$criterion-container-light-background: #ecf5fa !default;
+$criterion-highlight-strong: #ed5564 !default;
+$criterion-remove-color: #ea7f77 !default;
+$criterion-container-dark-background: #f6f6f6 !default;
+$criterion-divider-line-color: dynamic(#EBEBEB);
+
+// default font variables
+$criterion-alternative-font-color: #ffffff !default;
+$criterion-alternative-font-hover-color: #ffffff !default;
+$criterion-alternative-font-active-color: #ffffff !default;
+$criterion-default-font-color: #343434 !default;
+$criterion-font-color-inactive: #b0b0b0 !default;
+
+$criterion-font-size-smaller: round($font-size * 0.85) !default;
+$criterion-font-size-bigger: round($font-size * 1.15) !default;
+$criterion-font-size-heading: round($font-size * 1.35) !default;
+
+$criterion-font-weight-regular: 400;
+$criterion-font-weight-semibold: 600;
+$criterion-font-weight-bold: 700;
+
+// position card variables
+$criterion-position-card-header-background-color: #F4F9FF !default;
+$criterion-position-card-open-background-color: #FFFDF0 !default;
+$criterion-position-card-header-font-color: $criterion-default-font-color !default;
+$criterion-position-card-background-color: white !default;
+$criterion-position-card-border-radius: 2px !default;
+$criterion-position-card-font-color: $criterion-default-font-color !default;
+
+// employer card variables
+$criterion-employer-header-background-color: #eff5f9 !default;
+$criterion-employer-header-font-color: $criterion-default-font-color !default;
+
+// side panel
+$criterion-side-bg-color: #363d4d;
+$criterion-side-add-bg-color-light: #33363D;
+$criterion-side-add-bg-color-dark: #27282E;
+$criterion-side-bg-alternative-color: #444f63;
+$criterion-side-text-color: #8db5ee;
+$criterion-side-title-text-color: #6C7280;
+$criterion-side-text-alternative-color: #ffffff;
+$criterion-side-text-heading-color: #8db5ee;
+$criterion-side-border-color: #2e3443;
+$criterion-side-add-border-color: #2c2c2c;
+$criterion-side-border-active: dynamic(none);
+$criterion-side-border: none !default;
+
+//panel
+$criterion-panel-header-padding: dynamic(10px 25px 10px 25px);
+
+// field
+$criterion-readonly-input-border: 1px solid #efefef !default;
+$criterion-readonly-input-text-color: #343434 !default;
+
+$criterion-disabled-field-text-color: #000 !default;
+$criterion-disabled-field-background: #f9f9f9 !default;
+$criterion-disabled-field-opacity: 1;
+
+// button
+$criterion-button-border-radius: 2px !default;
+$criterion-button-light-color : #7d8a8b !default;
+
+$criterion-button-feature-text-color : #424242;
+$criterion-button-feature-background-color : #e5f0f7;
+$criterion-button-feature-background-over-color : #dbedf7;
+$criterion-button-feature-border-color : #c1e5fa;
+$criterion-button-font-weight : dynamic(600);
+$criterion-button-font-size : dynamic(unset);
+
+$criterion-web-form-tool-button-color : #313131;
+
+// grid
+$criterion-grid-border-color: dynamic(#E2E2E2);
+$criterion-grid-highlight-background-color: #F5F9FC;
+$criterion-grid-hover-background-color: rgba(0, 0, 0, 0.02);
+$criterion-grid-header-background-color: #F6F6F6 !default;
+$criterion-grid-font-color: #212121;
+$criterion-grid-header-border-color: #dadada;
+
+$criterion-toggle-color: $criterion-blue;
+$criterion-toggle-no-color: #a9a9a9;
+$criterion-toggle-body-color: #d0d0d0;
+
+$criterion-background-black: #000;
+$criterion-background-dark: #444;
+$criterion-background-gray: #eee;
+
+$criterion-blue-button-color: $criterion-blue;
+$criterion-background-white: #fff;
+
+$criterion-calendar-border-color: dynamic(#f2f2f2);
+$criterion-calendar-border-radius: dynamic(3px);
+$criterion-calendar-background-color: dynamic(#fff);
+
+$criterion-calendar-header-border-color: dynamic(#f2f2f2);
+$criterion-calendar-header-background-color: dynamic(#f6f6f6);
+
+$criterion-calendar-header-border-top: dynamic(1px solid $criterion-calendar-header-border-color);
+$criterion-calendar-header-border-left: dynamic(1px solid $criterion-calendar-header-border-color);
+$criterion-calendar-header-border-right: dynamic(1px solid $criterion-calendar-header-border-color);
+$criterion-calendar-header-border-bottom: dynamic(1px solid $criterion-calendar-header-border-color);
+
+$criterion-calendar-body-border-top: dynamic(1px solid $criterion-calendar-border-color);
+$criterion-calendar-body-border-left: dynamic(1px solid $criterion-calendar-border-color);
+$criterion-calendar-body-border-right: dynamic(1px solid $criterion-calendar-border-color);
+$criterion-calendar-body-border-bottom: dynamic(1px solid $criterion-calendar-border-color);
+
+
+$criterion-calendar-header-top-right-border: dynamic(1px solid);
+$criterion-calendar-header-box-shadow: dynamic(none);
+
+$criterion-calendar-border-radius: dynamic(none);
+
+// divider
+$criterion-divider-line: 1px solid $criterion-divider-line-color;

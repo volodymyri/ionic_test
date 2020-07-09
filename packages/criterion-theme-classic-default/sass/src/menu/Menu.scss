@@ -1,0 +1,32 @@
+.criterion-grid-menu {
+
+  .x-menu-item-default {
+    padding : 0 10px;
+  }
+
+  .x-menu-item-default a {
+    padding : 10px 0;
+    border-bottom : 1px solid $criterion-container-dark-background;
+  }
+
+  .x-menu-item-default:last-child a {
+    border-bottom : none;
+  }
+
+  .x-menu-item-default.x-menu-item-active {
+    background-color : #E1F6FD;
+  }
+
+  .x-menu-item-icon-default {
+    top: 15px;
+    left: 15px;
+  }
+
+  .x-menu-item-arrow-default {
+    top: 20px;
+  }
+
+  .x-menu-item-active .x-menu-item-arrow-default {
+    top: 20px;
+  }
+}

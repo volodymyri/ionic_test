@@ -1,0 +1,31 @@
+.criterion-help-articles {
+  .criterion-help-article {
+    cursor : pointer;
+
+    .title {
+      margin-bottom: 10px;
+
+      h2 {
+        color: #2196f3;
+        font-size: 14px;
+      }
+    }
+
+    .body {
+      margin-bottom: 24px;
+
+      a {
+        color: $base-color;
+      }
+    }
+    &.x-view-item-focused {
+      outline: none!important;
+    }
+  }
+  .related-articles {
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    text-align: center;
+  }
+}

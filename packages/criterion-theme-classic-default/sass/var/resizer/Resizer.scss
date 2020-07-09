@@ -1,0 +1,23 @@
+/**
+ * @var {string/list}
+ * Glyph for the northwest resizer handle when {@link Global_CSS#$enable-font-icons} is `true`.
+ */
+$resizer-handle-northwest-glyph: dynamic($fa-var-expand $resizer-handle-glyph-font-size "Font Awesome 5 Free");
+
+/**
+ * @var {string/list}
+ * Glyph for the northeast resizer handle when {@link Global_CSS#$enable-font-icons} is `true`.
+ */
+$resizer-handle-northeast-glyph: dynamic($fa-var-expand $resizer-handle-glyph-font-size "Font Awesome 5 Free");
+
+/**
+ * @var {string/list}
+ * Glyph for the southeast resizer handle when {@link Global_CSS#$enable-font-icons} is `true`.
+ */
+$resizer-handle-southeast-glyph: dynamic($fa-var-expand $resizer-handle-glyph-font-size "Font Awesome 5 Free");
+
+/**
+ * @var {string/list}
+ * Glyph for the southwest resizer handle when {@link Global_CSS#$enable-font-icons} is `true`.
+ */
+$resizer-handle-southwest-glyph: dynamic($fa-var-expand $resizer-handle-glyph-font-size "Font Awesome 5 Free");

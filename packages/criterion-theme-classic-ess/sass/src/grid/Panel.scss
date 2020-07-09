@@ -1,0 +1,166 @@
+// TODO Move to theme variables
+
+.x-panel-default-outer-border-rbl {
+  .x-grid-with-row-lines .x-grid-item:last-child {
+    border-bottom-width: 0px;
+  }
+}
+
+.criterion-grid-panel {
+  .x-column-header {
+    background-color: $criterion-grid-header-background-color;
+  }
+
+  .x-grid-header-ct {
+    -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+    -ms-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    border-top: none;
+    overflow: inherit;
+
+    .x-column-header {
+      background-color: transparent;
+
+      &:not(.x-column-header-first) .x-column-header-inner:not(.x-column-header-inner-empty):before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 26px;
+        width: 1px;
+        border-left: 1px solid $criterion-grid-border-color;
+      }
+    }
+
+    .x-column-header:first-child:not(.x-column-header-checkbox) {
+      .x-column-header-inner {
+        padding-left: 21px;
+      }
+    }
+
+    &:before {
+      content: '';
+      height: 5px;
+      display: block;
+      background-color: white;
+      position: absolute;
+      top: -3px;
+      left: 0px;
+      right: 0px;
+    }
+  }
+
+  .x-panel-bodyWrap {
+    overflow: visible;
+  }
+
+  .x-panel-body {
+    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.08));
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .criterion-toolbar-paging {
+    background-color: transparent;
+    padding: $toolbar-vertical-spacing 0;
+  }
+
+  .x-grid-item-container {
+    box-shadow: none;
+    min-height: unset;
+  }
+
+  .x-form-text-default {
+    font-size: 13px;
+    font-weight: $criterion-font-weight-regular;
+    padding: 8px 20px;
+
+    &.x-tagfield {
+      padding: inherit;
+    }
+  }
+
+  .x-grid-with-row-lines .x-grid-item {
+    border-color: $criterion-grid-border-color;
+
+    &:first-child {
+      border-top-color: transparent;
+    }
+  }
+
+  .x-grid-subtable-row {
+    .x-grid-rowbody {
+      padding: 15px 20px 15px 20px;
+    }
+  }
+
+  .x-grid-subtable {
+    .x-grid-subtable-header {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+      border: $grid-row-cell-border-width $grid-row-cell-border-style #efefef;
+    }
+
+    .x-grid-subtable-cell {
+      border: $grid-row-cell-border-width $grid-row-cell-border-style #efefef;
+    }
+  }
+
+  .column-header-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    display: inline-block;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 150, 235, 0.06);
+    box-shadow: 0 4px 15px rgba(238, 241, 250, 0.5);
+    float: left;
+    margin: 12px;
+  }
+
+  .pay-notes-icon {
+    background-image: url(../resources/images/icons/pay_notes.svg);
+  }
+
+  .incomes-icon {
+    background-image: url(../resources/images/icons/incomes.svg);
+  }
+
+  .taxes-icon {
+    background-image: url(../resources/images/icons/taxes.svg);
+  }
+
+  .deductions-icon {
+    background-image: url(../resources/images/icons/deduction.svg);
+  }
+}
+
+.with-top-bar {
+  .x-toolbar-default.x-docked-top {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.08));
+    background-color: white;
+  }
+
+  .x-grid-header-ct {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    @include box-shadow(none);
+    @include box-shadow(0 4px 6px 0 rgba(0, 0, 0, 0.06));
+  }
+}
+
+.criterion-grid-panel-simple-list {
+  .x-grid-cell-inner {
+    cursor: default !important;
+  }
+}

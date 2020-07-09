@@ -1,0 +1,13 @@
+.transfer-status {
+  &.bordered {
+    border: 1px solid #d3d3d3;
+    .x-form-trigger-wrap-default {
+      border: none;
+    }
+  }
+  padding-top: 5px;
+  textarea {
+    font-size: 14px;
+    line-height: 26px!important;
+  }
+}

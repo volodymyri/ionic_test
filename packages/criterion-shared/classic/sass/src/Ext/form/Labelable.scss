@@ -1,0 +1,13 @@
+.#{$prefix}form-item {
+  .tipForLabel {
+    font-size: 9px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  &.#{$prefix}form-readonly, &.#{$prefix}item-disabled, &.skipRequiredMark {
+    .requiredMark {
+      visibility: hidden;
+    }
+  }
+}

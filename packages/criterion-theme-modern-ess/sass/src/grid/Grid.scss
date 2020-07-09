@@ -1,0 +1,52 @@
+.#{$prefix}grid {
+  border-top: 1px solid rgba($criterion-dark-gray, 0.5);
+
+  // workflow's elements
+  &.ess-grid-with-workflow {
+    .workflow-cell {
+      padding: 0 !important;
+      margin: 0 !important;
+
+      .x-gridcell-body-el {
+        padding: 0;
+        height: 45px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 40px;
+          top: 5px;
+          border-radius: 100px;
+          left: 4px;
+        }
+
+        &.REJECTED:after {
+          background-color: $criterion-workflow-rejected !important;
+        }
+
+        &.VERIFIED:after {
+          background-color: $criterion-workflow-verified !important;
+        }
+
+        &.APPROVED:after {
+          background-color: $criterion-workflow-approved !important;
+        }
+
+        &.PENDING_APPROVAL:after {
+          background-color: $criterion-workflow-pending-approval !important;
+        }
+
+        &.NOT_SUBMITTED:after {
+          background-color: $criterion-workflow-not-submitted !important;
+        }
+      }
+    }
+
+  }
+}
+
+.#{$prefix}headercontainer {
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.05), 2px 2px 7px 0 rgba(0, 0, 0, 0.01);
+  z-index: 4;
+}

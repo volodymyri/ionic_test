@@ -1,0 +1,24 @@
+.criterion-ess-community-badge-picker {
+  .badge-list {
+    border-top: 1px solid $light-color;
+  }
+
+  .badge {
+    display: inline-block;
+    width: 100px;
+    margin : 0 15px 15px 15px;
+
+    &.x-item-selected {
+      border: 1px solid $criterion-ess-base-color;
+    }
+
+    img {
+      width : 100%;
+    }
+
+    p {
+      font-weight: $criterion-font-weight-bold;
+      text-align: center;
+    }
+  }
+}

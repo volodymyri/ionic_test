@@ -1,0 +1,480 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
+@import "normalize.min.css";
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+.page {
+    font-size: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    color: #343C4F;
+    background-color: #f6f6f6;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 1px 2px 1px 3px #eeeeee;
+    padding-top: 10px;
+    min-height: 610px;
+}
+
+/* Elements */
+
+ul.links {
+    margin: 9px 0 21px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+ul.links li {
+    display: inline;
+    font-size: 12px;
+    color: #414042;
+    text-transform: uppercase;
+}
+
+ul.links li a {
+    color: #414042;
+    text-decoration: underline;
+}
+
+.form-bg h2 {
+    margin: 0;
+}
+
+.field-holder {
+    text-align: left;
+    display: block;
+    width: 323px;
+}
+
+.field-holder.hidden {
+    display: none;
+}
+
+.field {
+    color: #343C4F;
+    font-weight: normal;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 15px 10px 15px;
+}
+
+input.field:-webkit-autofill,
+input.field:-webkit-autofill:hover,
+input.field:-webkit-autofill:focus,
+input.field:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #7c7c7c;
+}
+
+.field:focus {
+    border-color: #3892d3;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+.field[type=text] {
+    width: 100%;
+}
+
+.login {
+    color: #666666;
+    font-size: 15px;
+    border: 1px solid #E5E8ED;
+    border-radius: 4px;
+}
+
+.password {
+    color: #7c7c7c;
+    font-size: 15px;
+    margin-top: 6px;
+    border: 1px solid #E5E8ED;
+    border-radius: 4px;
+}
+
+.password input {
+    flex: 1;
+}
+
+.show-password {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: auto 10px auto 0;
+    cursor: pointer;
+}
+
+.show-password.active #eye #icon{
+    fill: #343C4F;
+}
+
+.show-password:hover {
+    cursor: pointer;
+}
+
+.company_id {
+    margin-bottom: 10px;
+    display: none;
+}
+
+.fa {
+    color: #7c7c7c;
+    font-size: 15px;
+    margin-top: 35px;
+}
+
+.login span, .password span, .fa span {
+    font-size: 28px;
+}
+
+.fa-remem span {
+    font-size: 15px;
+    position: relative;
+    bottom: 6px;
+    font-family: 'Open Sans', sans-serif
+}
+
+.fa-remem {
+    margin-top: 5px;
+}
+
+.no-border {
+    border: none;
+}
+
+.lt-ie9 .field-text {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+input.field-checkbox,
+input.field-radio {
+    position: relative;
+    -webkit-appearance: none;
+}
+
+.lt-ie9 input.field-checkbox, .lt-ie9 input.field-radio {
+    background: none !important;
+}
+
+.field-checkbox {
+    -webkit-mask-image: url(../images/checkbox_off.svg);
+    mask-image: url(../images/checkbox_off.svg);
+    background-color: #CED3DF;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.field-checkbox.checked {
+    -webkit-mask-image: url(../images/checkbox_on.svg);
+    mask-image: url(../images/checkbox_on.svg);
+    background-color: #0096EB;
+}
+
+input.field-radio {
+    -webkit-mask-image: url(../images/radio_off.svg);
+    mask-image: url(../images/radio_off.svg);
+    background-color: #CED3DF;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.field-radio.checked {
+    -webkit-mask-image: url(../images/radio_on.svg);
+    mask-image: url(../images/radio_on.svg);
+    background-color: #0096EB;
+}
+
+.field-radio ~ label:first-of-type {
+    cursor: pointer;
+}
+
+.field.invalid {
+    border-color: #cf4c35;
+}
+
+a {
+    margin-left: 2px;
+    color: #4183c4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.request-sent-msg {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.forgot-password, .cancel {
+    width: 100%;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.forgot-password a,
+.cancel a {
+    color: #808080;
+    font-size: 15px;
+}
+
+.btn-auth {
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    margin: 26px 0;
+    display: block;
+    background: #0096EB;
+    border-radius: 4px;
+    width: 323px;
+}
+
+.btn-auth:focus {
+    outline: none;
+}
+
+.biometric-wrapper {
+    display: none;
+}
+
+.biometric-pre {
+    color: #909AB5;
+}
+
+#biometric_submit {
+    background-image: url(../images/fingerprint.svg);
+    background-repeat: no-repeat;
+    background-position: 60px;
+    background-size: 28px 28px;
+    padding-left: 30px;
+}
+
+/* Specific */
+
+.error {
+    color: #FA667F;
+    display: block;
+    font-size: 12px;
+    width: 90%;
+    margin: 16px 0;
+}
+
+.tenants {
+    color: #666666;
+    font-size: 15px;
+    margin-top: 6px;
+    border: 1px solid #E5E8ED;
+    border-radius: 4px;
+}
+
+#tenant_select {
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    width: 100%;
+    color: #7c7c7c;
+}
+
+#tenant_select:focus{
+    outline: none;
+}
+
+.select-fa {
+    margin-top: 11px;
+    font-size: 17px;
+    position: relative;
+    right: 17px;
+}
+
+#auth_tenant h2, #auth_2fa h2 {
+    margin: 20px 0;
+}
+
+#auth_2fa h2 {
+    margin: 20px 0;
+}
+
+#auth_2fa {
+    min-height: 200px;
+}
+
+#enableAuthentication {
+    display: none;
+}
+
+.window-footer {
+    padding: 9px 9px 6px 9px;
+}
+
+.tenant_logo {
+    background-image: url(../images/criterion_logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 110px;
+    margin-bottom: 60px;
+}
+
+/*devices only. temporary disabled*/
+/*::-webkit-scrollbar {*/
+/*    -webkit-appearance: none;*/
+/*    width: 2px;*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+/*    border-radius: 2px;*/
+/*    background-color: #7c7c7c;*/
+/*}*/
+
+.header-text {
+    color: #343C4F;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+
+.main-panel {
+    width: 375px;
+    display: inline-block;
+}
+
+#passCont {
+    display: flex;
+    display: -webkit-flex;
+}
+
+input, select, textarea {
+    font-size: 15px;
+}
+
+.logo-wrapper {
+    height: 80px;
+    min-height: 80px;
+    line-height: 80px;
+    padding-left: 31px;
+    border-bottom: 1px solid #E0E8F4;
+}
+
+.company-logo {
+    max-width: 288px;
+    background-size: cover;
+    background: no-repeat left center;
+    height: 80px;
+}
+
+.logo {
+    height: 75px;
+}
+
+.form {
+    background-color: white;
+    border-left: 1px solid #E0E8F4;
+    border-right: 1px solid #E0E8F4;
+    border-bottom: 1px solid #E0E8F4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -3px;
+}
+
+.flex-spacer {
+    flex: 1;
+}
+
+.app-links {
+    text-align: center;
+    bottom: 48px;
+    width: 100%;
+    display: none;
+}
+
+.page, .logo, .btn-auth, .logo-wrapper {
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.page, .company-logo {
+    -webkit-transition: background-image 0.3s ease-in-out;
+    -o-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.links li, .links li >, .fac-checkbox span, .links a, .cancel {
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.flex-row {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.remem {
+    margin-top: 4px;
+    margin-left: 22px;
+}
+
+#forgotCont {
+    line-height: 0;
+    margin-right: 0;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+
+@media (min-width: 1281px) {
+    .app-links {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .app-links {
+        display: inline;
+    }
+}

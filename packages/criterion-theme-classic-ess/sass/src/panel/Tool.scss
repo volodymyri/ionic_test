@@ -1,0 +1,23 @@
+.x-tool-tool-el {
+  &.x-tool-expand-bottom,
+  &.x-tool-collapse-top {
+    background: none;
+    background-color: transparent;
+
+    margin-right: 17px!important;
+
+    &:before {
+      font-family: "Ionicons";
+      font-size: 13px;
+      color: $battleship-grey;
+    }
+  }
+
+  &.x-tool-expand-bottom:before {
+    content: "\f3d0"; // $ionicon-var-ios7-arrow-down
+  }
+
+  &.x-tool-collapse-top:before {
+    content: "\f3d8"; // $ionicon-var-ios7-arrow-up
+  }
+}

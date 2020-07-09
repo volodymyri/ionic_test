@@ -1,0 +1,52 @@
+.criterion-common-picture-uploader {
+
+  .upload-zone {
+    border: 2px dashed #ccc;
+    background-color: #fafbfc;
+    border-radius: 10px;
+
+    & > .x-panel-bodyWrap > .x-panel-body-default {
+      background-color: #fafbfc;
+
+      .x-autocontainer-innerCt {
+        vertical-align: middle;
+      }
+    }
+
+    .upload-text {
+      text-align: center;
+      color: #8C99A5;
+
+      .title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 28px;
+        padding: 20px 0 10px;
+      }
+
+      & > span {
+        font-family: $ionicons-font-family;
+        font-size: 80px;
+        margin: 15px;
+      }
+
+      .browse-holder {
+        font-size: 15px;
+        font-weight: 600;
+
+        .description {
+          color: #6C7883;
+        }
+        .criterion-btn-transparent, .criterion-btn-transparent.x-btn-over {
+          padding: 0;
+
+          .x-btn-inner {
+            padding: 0;
+            border-bottom: 1px solid #8C99A5;
+            color: #8C99A5 !important;
+          }
+        }
+      }
+    }
+  }
+}

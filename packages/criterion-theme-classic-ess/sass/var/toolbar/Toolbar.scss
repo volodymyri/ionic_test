@@ -1,0 +1,22 @@
+$toolbar-scroller-glyph-font-size: dynamic(18px);
+$toolbar-scroller-top-margin: dynamic(8px 0);
+$toolbar-scroller-bottom-margin: dynamic(8px 0);
+$toolbar-scroller-top-glyph: dynamic($ionicon-var-chevron-up $toolbar-scroller-glyph-font-size $font-icon-font-family);
+$toolbar-scroller-bottom-glyph: dynamic($ionicon-var-chevron-down $toolbar-scroller-glyph-font-size $font-icon-font-family);
+$toolbar-menu-overflow-glyph: dynamic(null);
+
+
+$toolbar-background-color: dynamic(transparent);
+$toolbar-vertical-spacing: dynamic(15px);
+
+$toolbar-footer-background-color: dynamic(transparent);
+$toolbar-footer-vertical-spacing: dynamic(15px);
+
+$toolbar-footer-horizontal-spacing: dynamic(0px);
+
+$toolbar-spacer-width: dynamic(10px);
+
+$toolbar-horizontal-spacing: dynamic(10px);
+
+$toolbar-scroller-right-glyph: dynamic($ionicon-var-chevron-right $toolbar-scroller-glyph-font-size $font-icon-font-family);
+$toolbar-scroller-left-glyph: dynamic($ionicon-var-chevron-left $toolbar-scroller-glyph-font-size $font-icon-font-family);

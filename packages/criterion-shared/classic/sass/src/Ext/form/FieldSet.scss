@@ -1,0 +1,15 @@
+.criterion-fieldsetHeader { // move to file
+  .x-fieldset-header-text {
+    color: #4183c4 !important;
+    font-weight: bold !important;
+  }
+  .x-fieldset-body {
+    margin: 5px 0;
+  }
+}
+
+.x-fieldset-default { // todo move to theme
+  border: 1px solid #cecece; // todo var
+  padding: 0 10px;
+  margin: 0 0 10px;
+}

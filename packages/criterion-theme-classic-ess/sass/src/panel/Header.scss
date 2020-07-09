@@ -1,0 +1,9 @@
+.#{$prefix}panel-header {
+  .#{$prefix}component.sub-title {
+    color: $battleship-grey;
+    text-transform: uppercase;
+    font-weight: $criterion-font-weight-semibold;
+    font-size: $panel-header-font-size;
+    line-height: $panel-header-line-height;
+  }
+}

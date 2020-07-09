@@ -1,0 +1,184 @@
+.criterion-selfservice-dashboard-main {
+  .x-container {
+    overflow: visible;
+    .x-box-inner {
+      overflow: visible;
+    }
+  }
+
+  .x-toolbar {
+    .x-component {
+      .item-label {
+        color: $battleship-grey;
+      }
+
+      color: $dark;
+      font-weight: $criterion-font-weight-semibold;
+      font-size: 13px;
+    }
+  }
+
+  .workflowActions {
+    border-left: 1px solid $criterion-gray;
+  }
+
+  .info-table {
+    .x-panel-body {
+      border-left: 1px solid #CFCFCF !important;
+      padding: 0 25px;
+    }
+
+    td:first-child {
+      .x-panel-body {
+        border-left: none !important;
+      }
+    }
+  }
+
+  .values-table {
+    .x-panel-body {
+      padding: 30px 20px;
+      border: none;
+      border-bottom: 1px solid #CFCFCF;
+      white-space: nowrap;
+    }
+
+    tr:first-child {
+      .x-panel-body {
+        background: #F6F6F6;
+        font-weight: 600;
+        border-top: 1px solid #CFCFCF;
+        border-right: 1px solid #CFCFCF;
+        padding: 15px 20px;
+      }
+    }
+  }
+
+  .category_table tr:first-child td {
+    vertical-align: top;
+  }
+
+  .listValues {
+    strong {
+      display: inline-block;
+      width: 120px;
+    }
+  }
+
+  .employeeName {
+    color: $base-color !important;
+    font-size: 18px;
+  }
+
+  .commentTextarea {
+    .x-form-trigger-wrap {
+      background-color: lighten($criterion-light-gray, 5%);
+    }
+  }
+
+  .comment_title {
+    color: $battleship-grey;
+    font-weight: $criterion-font-weight-semibold;
+    font-size: 13px;
+  }
+
+  .has-comments {
+    .comment_title {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .comments_count {
+      cursor: pointer;
+    }
+  }
+
+  .comments_count {
+    background-color: $criterion-ess-base-color;
+    color: white;
+    font-weight: $criterion-font-weight-semibold;
+    padding: 0 7px;
+    border-radius: 20px;
+    font-size: 13px;
+
+  }
+
+  .enrollment-summary {
+    .title {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .criterion-notes {
+    label {
+      .x-form-item-label-text {
+        color: $battleship-grey;
+        font-weight: $criterion-font-weight-semibold;
+        font-size: 13px;
+      }
+      .x-form-item-label-inner {
+        padding-bottom: 0;
+      }
+    }
+    .x-form-display-field-default {
+      font-weight: normal;
+    }
+  }
+
+  .info-box.info-panel-element {
+    .x-panel-header .x-title-text {
+      padding-left: 4px;
+    }
+
+    .video-list {
+      @include criterion-clearfix;
+
+      .video {
+        position: relative;
+        margin-right: 20px;
+        margin-top: 20px;
+        float: left;
+        width: 200px;
+        cursor: pointer;
+      }
+
+      .mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .title {
+        padding-top: 10px;
+        font-weight: bold;
+      }
+
+      .frame-container {
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+      }
+
+      iframe {
+        height: 100%;
+        width: 100%;
+        border-width: 0;
+        display: block;
+      }
+    }
+  }
+
+  .workflow-details-oe-step-document {
+     .x-grid-body {
+       box-shadow: none;
+     }
+  }
+
+  .workflow-details-oe-step-document-title .x-title-item {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

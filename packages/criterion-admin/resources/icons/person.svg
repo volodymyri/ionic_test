@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="25px" viewBox="0 0 23 25" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>person</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ESS-Timesheets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="person" transform="translate(0.000000, 1.000000)">
+            <path d="M15.8888889,23.5 L15.8888889,20.4862037 C15.8888889,18.2923148 14.1536992,16.8725 12.6468741,16.8725 C12.4777505,16.8725 12.5675676,16.8001852 12.6468741,16.7462037 C12.987988,16.5160185 14.1317226,15.9731481 14.1164346,14.7091667 C14.0982801,13.1997222 13.1523342,12.5 12,12.5"
+                  id="Shape" stroke="#0096EB"></path>
+            <rect id="Rectangle-7" fill="#0096EB" x="11" y="5" width="1" height="8"></rect>
+            <path d="M7,23.5 L7,20.4862037 C7,18.2923148 8.78696187,16.8725 10.3387454,16.8725 C10.4696187,16.8725 10.4105781,16.7798148 10.3387454,16.7462037 C9.98253383,16.5781481 8.8095941,15.9731481 8.82533825,14.7091667 C8.84403444,13.1997222 9.81918819,12.5 11,12.5"
+                  id="Shape" stroke="#0096EB"></path>
+            <path d="M20.1851852,6.42796282 L20.1851852,8.82805232 C20.1851852,9.63894108 19.5376072,10.2962963 18.7387793,10.2962963 L4.2612207,10.2962963 C3.46239279,10.2962963 2.81481481,9.63894108 2.81481481,8.82805232 L2.81481481,6.40740741"
+                  id="Shape" stroke="#0096EB"></path>
+            <polygon id="Shape" stroke="#0096EB" points="20.1500001 3 22.3000002 6.88888889 18 6.88888889"></polygon>
+            <circle id="Oval" stroke="#0096EB" cx="2.79980469" cy="4.26000977" r="2"></circle>
+            <rect id="Rectangle-path" stroke="#0096EB" x="9" y="0" width="4.92592593" height="4.92592593"
+                  rx="2.46296296"></rect>
+        </g>
+    </g>
+</svg>

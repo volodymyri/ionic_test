@@ -1,0 +1,29 @@
+.criterion-grid-panel {
+  &.criterion-performance-employees-grid {
+    .x-panel-body {
+      box-shadow: none;
+    }
+
+    .x-grid-item {
+      border: none !important;
+
+      .x-grid-cell-inner {
+        padding: 10px;
+      }
+
+      &.x-grid-item-selected {
+        .x-grid-cell-inner {
+          color: $criterion-ess-base-color;
+        }
+      }
+    }
+  }
+}
+
+.criterion-selfservice-performance {
+  .x-panel-header .x-title-text-default {
+    .person-name {
+      text-transform: capitalize;
+    }
+  }
+}

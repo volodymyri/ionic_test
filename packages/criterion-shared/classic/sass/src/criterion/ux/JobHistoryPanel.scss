@@ -1,0 +1,57 @@
+.criterion-job-history-panel {
+  &.caption-component {
+    .x-tool {
+      visibility: hidden;
+    }
+    .x-panel-body {
+      display: none;
+    }
+
+    .x-panel-header-title {
+      cursor: default;
+    }
+  }
+
+  .x-panel-header-title {
+    cursor: pointer;
+  }
+
+  .title-table {
+    width: 100%;
+
+    td:nth-child(0) {
+      width: 25%;
+    }
+
+    td {
+      width: 25%;
+    }
+  }
+
+  ul.items {
+    list-style-type: none;
+    overflow: hidden;
+    clear: both;
+    padding: 0;
+
+    li {
+      float: left;
+      width: 33%;
+      margin-right: 1%;
+      margin-bottom: 10px;
+    }
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .box {
+    padding: 0 4px;
+    border-radius: 2px;
+    background-color: $criterion-blue;
+    color: white;
+    display: inline-block;
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,73 @@
+.ess-communities-profile {
+  .center {
+    text-align: center;
+  }
+
+  .photo {
+    background-color: white;
+    background-image: linear-gradient(#EEE 49%, #DDD 1px, #CCC 1px, transparent 50%);
+  }
+
+  .circular {
+    @include criterion-round-picture(90px);
+    border: 6px solid #EEE;
+    margin: 0 auto;
+  }
+
+  .profile-info {
+    p {
+      margin: 7px 0;
+      text-align: center;
+    }
+  }
+
+  .checked-info {
+    border-top: 10px solid #EEE;
+    border-bottom: 10px solid #EEE;
+    padding: 10px 0;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .email {
+    color: $criterion-orange-ess;
+  }
+
+  .b-title {
+    .x-innerhtml {
+      font-weight: bold;
+    }
+  }
+
+  .itemList {
+    padding: 10px;
+
+    .badge, .community {
+      clear: both;
+
+      .item-img {
+        width: 50px;
+      }
+
+      .item-name {
+        margin: 10px 15px 0 0;
+        width: 70%;
+      }
+
+      .item-count {
+        margin: 10px 0 0 0;
+        font-weight: bold;
+      }
+
+      .badgeEl, .communityEl {
+        float: left;
+      }
+
+      .communityEl.item-img {
+        margin: 6px 0;
+      }
+    }
+  }
+}

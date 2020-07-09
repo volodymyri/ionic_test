@@ -1,0 +1,10 @@
+.x-tab.x-tab-active.x-tab-default.x-tab-rotate-left {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.x-tab.x-tab-active.x-tab-default.x-tab-rotate-left {
+  .x-tab-icon-el, .x-tab-inner-default {
+    color: $base-color;
+  }
+}

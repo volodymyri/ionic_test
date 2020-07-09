@@ -1,0 +1,28 @@
+.simple-mask {
+  .x-mask-msg-text {
+    padding: 0;
+    background: none !important;
+  }
+}
+
+.x-mask {
+  opacity: 0;
+}
+
+.x-mask-msg {
+  background: transparent !important;
+}
+
+.x-mask.x-mask-fixed {
+  opacity: 0;
+}
+
+.x-mask-msg-text {
+  background: none !important;
+  color: transparent !important;
+}
+
+.x-mask.x-border-box.x-mask-fixed {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,64 @@
+.criterion-ess-community-reply-box {
+  background: white;
+  color: #444444;
+  border-top: 1px solid #ebecee!important;
+
+  .reply-editor-bottom-bar {
+    border-top: 1px solid #f0f0f0 !important;
+    .x-toolbar-item {
+      margin: 0 !important;
+    }
+
+    .criterion-btn-ess-new-light {
+      &.x-btn-over {
+        background-color: #F2F2F2 !important;
+      }
+    }
+  }
+
+  .x-toolbar-default,
+  .x-panel-default,
+  .x-docked-bottom,
+  .x-panel-body-default {
+    background-color: #fafbfd;
+  }
+
+
+
+  .reply-editor {
+    border: solid 1px #ebecee;
+    border-radius: 3px;
+    background-color: #ffffff;
+    .x-toolbar-default,
+    .x-panel-default,
+    .x-docked-bottom,
+    .x-panel-body-default {
+      background-color: #ffffff;
+    }
+  }
+
+  .x-panel-body.x-panel-body-default {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .x-html-editor-input {
+    border: 0;
+  }
+
+  .x-html-editor-wrap .x-toolbar {
+    border: 0;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .criterion-btn-ess-post {
+    border-radius: 3px;
+    background-color: $criterion-ess-base-color !important;
+
+    .x-btn-inner {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.criterion-selfservice {
+  /*
+    @deprecated
+    Use Sencha's style theming
+     */
+
+  .criterion-ess-panel {
+
+    .x-panel-default, .x-panel-body-default {
+      background: white;
+    }
+
+    & > .x-panel-bodyWrap {
+      overflow: visible;
+
+      & > .x-panel-body {
+        @include ess-box-shadow-0-1-10;
+      }
+    }
+
+    &.withoutbord > .x-panel-bodyWrap {
+      & > .x-panel-body {
+        @include box-shadow(none !important);
+      }
+    }
+
+    & > .x-header, .x-grid-header-ct, .criterion-pseudo-header {
+      border: none;
+    }
+
+    .criterion-pseudo-header {
+      border: none;
+    }
+
+    .x-grid-header-ct {
+      border: none;
+    }
+
+    & > .x-header {
+      padding: $criterion-panel-header-padding;
+    }
+
+    .ext-cal-hd-days-tbl {
+      background-color: $criterion-main-panel-ess-bg;
+    }
+  }
+
+  .#{$prefix}panel, .#{$prefix}panel-body {
+    overflow: visible;
+  }
+}
+
+.#{$prefix}panel-ghost {
+  @include opacity($panel-ghost-opacity);
+}
+
+@include extjs-panel-ui(
+        $ui: 'default'
+);
+
+@include extjs-panel-ui(
+        $ui: 'default-framed',
+        $ui-border-color: $panel-frame-border-color,
+        $ui-border-width: $panel-frame-border-width,
+        $ui-border-radius: $panel-frame-border-radius,
+        $ui-padding: $panel-frame-padding-no-bottom,
+        $ui-header-border-color: $panel-frame-border-color,
+        $ui-header-border-width: $panel-frame-header-border-width,
+        $ui-header-inner-border-color: $panel-frame-header-inner-border-color,
+        $ui-header-inner-border-width: $panel-frame-header-inner-border-width,
+        $ui-header-padding: $panel-frame-header-padding,
+        $ui-body-border-width: $panel-frame-body-border-width,
+        $ui-body-background-color: $panel-frame-background-color
+);
+
+@include extjs-panel-ui(
+        $ui: 'no-footer-framed',
+        $ui-border-color: $panel-frame-border-color,
+        $ui-border-width: $panel-frame-border-width,
+        $ui-border-radius: $panel-frame-border-radius,
+        $ui-padding: $panel-frame-padding,
+        $ui-header-border-color: $panel-frame-border-color,
+        $ui-header-border-width: $panel-frame-header-border-width,
+        $ui-header-inner-border-color: $panel-frame-header-inner-border-color,
+        $ui-header-inner-border-width: $panel-frame-header-inner-border-width,
+        $ui-header-padding: $panel-frame-header-padding,
+        $ui-body-border-width: $panel-frame-body-border-width,
+        $ui-body-background-color: $panel-frame-background-color
+);
+
+@include extjs-panel-ui(
+        $ui: 'grid-framed',
+        $ui-border-color: $panel-frame-border-color,
+        $ui-border-width: $panel-frame-border-width,
+        $ui-border-radius: $panel-frame-border-radius,
+        $ui-padding: $panel-frame-padding,
+        $ui-header-border-color: $panel-frame-border-color,
+        $ui-header-border-width: $panel-frame-header-border-width,
+        $ui-header-inner-border-color: $panel-frame-header-inner-border-color,
+        $ui-header-inner-border-width: $panel-frame-header-inner-border-width,
+        $ui-header-padding: $panel-frame-header-padding,
+        $ui-body-border-width: $panel-frame-body-border-width,
+        $ui-body-background-color: $panel-frame-background-color
+);
+
+@include extjs-panel-ui(
+        $ui: 'clean',
+        $ui-header-background-color: null,
+        $ui-border-width: $panel-frame-border-width,
+        $ui-border-radius: $panel-frame-border-radius,
+        $ui-body-background-color: $panel-frame-background-color
+);
+
+.#{$prefix}panel-clean-framed {
+  & > .x-panel-bodyWrap {
+    & > .x-panel-body {
+      @include box-shadow(none !important);
+    }
+  }
+}
+
+.#{$prefix}panel-bodyWrap {
+  overflow: visible;
+  .#{$prefix}panel-body-default-framed,
+  .#{$prefix}panel-body-no-footer-framed {
+    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.08));
+    border-radius: 3px;
+  }
+}
+
+.#{$prefix}panel-header {
+  .#{$prefix}component {
+    font-size: 14px;
+  }
+}

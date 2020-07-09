@@ -1,0 +1,29 @@
+.criterion-ess-help {
+
+  background-color: white;
+
+  @include box-shadow(-1px -1px 4px 0 rgba(0, 0, 0, 0.08));
+
+  border-radius: 3px;
+
+  .x-panel-body {
+    background-color: white;
+  }
+
+  .x-panel-header {
+
+    .x-panel-header-title-default {
+      & > .x-title-text-default {
+        text-transform: none;
+      }
+
+    }
+
+    .criterion-btn-transparent, .criterion-btn-transparent.x-btn-over {
+      .x-btn-glyph {
+        color: #999 !important;
+      }
+    }
+
+  }
+}

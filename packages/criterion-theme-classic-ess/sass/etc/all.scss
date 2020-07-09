@@ -1,0 +1,105 @@
+// font-awesome package fix. added shared folder path
+$output-paths: ("path": "../resources", "shared": "../../resources");
+
+//New Style Guide
+$bluish-green: #13b078;
+$bluish-green-over: #0e8259;
+$bluish-green-disabled: #13b078aa;
+$bluish-red: #ff5000;
+$bluish-red-over: #d0021b;
+
+$battleship-grey: #787c85;
+$pale-grey-two: #f5f6f8;
+$warm-grey: #9b9b9b;
+$dark: #282e3a;
+$dark-grey: #909AB5;
+$silver: #c4c4c4;
+$error: #d0021b;
+
+$transparent-color: dynamic(rgba(0, 0, 0, 0));
+
+$criterion-item-over-bg: dynamic(rgba(0, 0, 0, 0.05));
+
+$criterion-light-yellow: #FEF9B7;
+$criterion-green: #64be0f;
+
+$criterion-ess-base-color: $bluish-green;
+$criterion-ess-base-color-disabled: $bluish-green-disabled;
+$criterion-ess-base-color-over: $bluish-green;
+$criterion-main-panel-ess-bg: #F9F9FD;
+$criterion-green-d: #64be0f;
+
+// icons
+$criterion-icon-enabled-color: $bluish-green;
+$criterion-icon-enabled-color-over: $bluish-green-over;
+$criterion-icon-warning-color: $bluish-red;
+$criterion-icon-warning-color-over: $bluish-red-over;
+$criterion-icon-disabled-color: $criterion-gray;
+$criterion-icon-disabled-color-over: $criterion-gray;
+
+// employer card variables
+$criterion-employer-header-background-color: #f5f5f5 !default;
+$criterion-employer-header-font-color: $criterion-default-font-color !default;
+
+// side panel
+$criterion-side-bg-color: #ffffff;
+$criterion-side-bg-alternative-color: #ffffff;
+$criterion-side-add-bg-color-light: #ffffff;
+$criterion-side-add-bg-color-dark: #ffffff;
+$criterion-side-text-color: #2e3443;
+$criterion-side-title-text-color: #6C7280;
+$criterion-side-text-alternative-color: #2e3443;
+$criterion-side-text-active-color: $base-color;
+$criterion-side-text-heading-color: #65707e;
+$criterion-side-border-color: $criterion-gray;
+$criterion-side-add-border-color: $criterion-gray;
+$criterion-side-border-active: dynamic(3px solid $base-color);
+$criterion-side-border: 1px solid $criterion-border-light-grey;
+
+// panel
+$criterion-panel-box-shadow: #E6E6E6;
+
+//component
+$criterion-item-hover: rgba(0, 0, 0, 0.03);
+$criterion-toggle-color: $criterion-ess-base-color;
+
+//tooltip
+$criterion-tooltip-total-line-color: #cfcfcf;
+$criterion-tooltip-items-secondary-color: #A6A6A6;
+
+//grid
+$criterion-grid-header-background-color: #fff;
+$criterion-grid-border-color: dynamic(#ececec);
+$criterion-grid-header-border-color: #dadada;
+
+
+$criterion-disabled-field-background: $pale-grey-two;
+$criterion-disabled-field-opacity: 0.4;
+$criterion-readonly-input-border: green;
+
+
+$criterion-form-search-field-background: rgba(0, 0, 0, 0.03);
+$criterion-form-search-trigger-glyph-color: $warm-grey;
+
+
+$criterion-calendar-border-color: dynamic(#f2f2f2);
+$criterion-calendar-border-radius: dynamic(3px);
+$criterion-calendar-background-color: dynamic(#fff);
+
+$criterion-calendar-header-border-color: dynamic(#f2f2f2);
+$criterion-calendar-header-background-color: dynamic(#fff);
+
+$criterion-calendar-header-border-top: dynamic(none);
+$criterion-calendar-header-border-left: dynamic(none);
+$criterion-calendar-header-border-right: dynamic(none);
+$criterion-calendar-header-border-bottom: dynamic(none);
+
+$criterion-calendar-body-border-top: dynamic(none);
+$criterion-calendar-body-border-left: dynamic(none);
+$criterion-calendar-body-border-right: dynamic(none);
+$criterion-calendar-body-border-bottom: dynamic(none);
+
+$criterion-calendar-header-top-right-border: dynamic(0px none);
+$criterion-calendar-header-box-shadow: dynamic(0 4px 6px 0 rgba(0, 0, 0, 0.06));
+
+$criterion-calendar-border-radius: dynamic(3px);

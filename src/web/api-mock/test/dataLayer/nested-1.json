@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": 1,
+    "string1": "1",
+    "nested": [
+      {
+        "id": 2,
+        "string1": "1-1",
+        "nested1": [
+          {
+            "id": 3,
+            "string1": "1-1-1"
+          }
+        ]
+      }
+    ]
+  },
+  "success": true
+}

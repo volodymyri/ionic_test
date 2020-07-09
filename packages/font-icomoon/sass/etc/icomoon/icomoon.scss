@@ -1,0 +1,72 @@
+// Generate by https://icomoon.io/app/#/select/
+// svg -> import -> edit -> generate
+
+$icomoon-font-path: dynamic("font-icomoon/fonts");
+$ts: "17022020"; // for update font <-- change this
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?#{$ts}');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?#{$ts}#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/icomoon.ttf?#{$ts}') format('truetype'),
+  url('#{$icomoon-font-path}/icomoon.woff?#{$ts}') format('woff'),
+  url('#{$icomoon-font-path}/icomoon.svg?#{$ts}#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #fff;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bank:before {
+  content: "\0041";
+}
+.icon-briefcase:before {
+  content: "\0042";
+}
+.icon-calendar:before {
+  content: "\0043";
+}
+.icon-home:before {
+  content: "\0044";
+}
+.icon-learning:before {
+  content: "\0045";
+}
+.icon-performance:before {
+  content: "\0046";
+}
+.icon-recruiting:before {
+  content: "\0047";
+}
+.icon-resources:before {
+  content: "\0048";
+}
+.icon-settings:before {
+  content: "\0049";
+}
+.icon-time:before {
+  content: "\004a";
+}
+.icon-user-copy:before {
+  content: "\004b";
+}
+.icon-career:before {
+  content: "\e901";
+}
+.icon-employment:before {
+  content: "\e900";
+}

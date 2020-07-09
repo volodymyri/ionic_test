@@ -1,0 +1,63 @@
+.criterion-person-goals {
+
+  $colorMas: (
+      "1": #FFEBEE,
+      "2": #cfd4f4,
+      "3": #e0f7fa,
+      "4": #E8F5E9,
+      "5": #C8E6C9,
+      "6": #f8bbd0,
+      "7": #f06292,
+      "8": #e1bee7,
+      "9": #ce93d8,
+      "10": #ba68c8,
+      "11": #ab47bc,
+      "12": #FFCDD2,
+      "13": #9fa8da,
+      "14": #7986cb,
+      "15": #5c6bc0,
+      "16": #BBDEFB,
+      "17": #90CAF9,
+      "18": #64B5F6,
+      "19": #42A5F5,
+      "20": #EF9A9A,
+      "21": #b2ebf2,
+      "22": #80deea,
+      "23": #4dd0e1,
+      "24": #26c6da,
+      "25": #E57373,
+      "26": #EF5350,
+      "27": #A5D6A7,
+      "28": #81C784,
+      "29": #66BB6A,
+      "30": #fff9c4
+  );
+
+  @each $color_name, $color in $colorMas {
+    .bg-color-#{$color_name} {
+      background-color: lighten($color, 5%) !important;
+    }
+  }
+
+  .weight-in-percent {
+    padding-top: 10px;
+  }
+
+  .x-grid-row-summary {
+    .summary-item {
+      line-height: 150%;
+    }
+
+    .weight-in-percent {
+      padding-top: 0;
+
+      .x-grid-cell-inner {
+        padding: 16px 13px;
+
+        .criterion-warning {
+          color: $criterion-red;
+        }
+      }
+    }
+  }
+}

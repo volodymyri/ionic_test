@@ -1,0 +1,17 @@
+.criterion-payroll-pay-processing-gl-export {
+  .buttons-container {
+    background-color: #e7e7e7;
+
+    .x-panel-body-default {
+      background-color: #e7e7e7;
+    }
+  }
+
+  .link-visited {
+    &.criterion-btn-transparent {
+      .x-btn-inner {
+        color: $criterion-darken-gray !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@mixin criterion-position-card($font-size, $back-color, $font-color) {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+
+  .x-panel-body-default {
+    background-color: $back-color;
+  }
+
+  .criterion-position-card-trigger {
+    @extend .criterion-btn-link-menu;
+
+    .x-btn-inner-default-small {
+      padding : 0
+    }
+
+    .x-btn-arrow-right:after {
+      color: #ccc;
+      padding: 5px 5px 0 0 !important;
+    }
+  }
+
+  .info {
+    p {
+      font-size: round($font-size * 0.85);
+    }
+  }
+
+  p {
+    color: $font-color;
+  }
+}
+
+.criterion-orgchart-position-card {
+
+  .circular {
+    @include criterion-round-picture(80px);
+
+    border: 1px solid $panel-body-border-color;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin : 16px 12px 0 16px;
+
+    cursor: pointer;
+  }
+
+  .info {
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0;
+
+      &.title {
+        padding: 16px 0 5px;
+
+        span {
+          font-weight: 600;
+          font-size: larger;
+        }
+      }
+
+      &.position {
+        padding: 3px 0;
+      }
+
+      &.employer {
+        padding: 3px 0;
+      }
+    }
+
+    div.open {
+      text-align: center;
+    }
+
+    .icons {
+      padding-top: 20px;
+      .fte {
+        @include border-radius(4px);
+        background-color: $base-color;
+        color: white;
+      }
+
+      .fteLabel {
+        padding: 0 5px;
+        font-weight: bold;
+      }
+
+      .fteCount {
+        font-weight: bold;
+        background-color: lighten($base-color, 10);
+        border-radius: 0 4px 4px 0;
+        padding: 0 5px;
+      }
+
+      .subIcon {
+        padding-left: 15px;
+        padding-right: 4px;
+        position: relative;
+        top: 1px;
+
+        &::after {
+          font-family: Ionicons;
+          content: $ionicon-var-person-stalker;
+          width: auto;
+          display: inline-block;
+          background: none;
+          color: $base-color;
+          font-weight: normal;
+          font-size: 16px;
+        }
+      }
+
+      .subCount {
+        font-weight: bold;
+      }
+    }
+
+    .triggerHolder {
+      //margin-bottom: 5px;
+      float: right;
+    }
+  }
+
+  @include criterion-position-card($font-size, $criterion-position-card-background-color, $criterion-position-card-font-color);
+
+  &.criterion-position-card-header {
+    @include criterion-position-card($font-size, $criterion-position-card-header-background-color, $criterion-position-card-header-font-color);
+
+    border-top: 5px solid $base-color !important;
+
+    .circular {
+      @include criterion-round-picture(80px);
+    }
+
+    border-radius: 0;
+  }
+
+  &.criterion-position-card-open {
+    @include criterion-position-card($font-size, $criterion-position-card-open-background-color, $criterion-position-card-header-font-color);
+  }
+}

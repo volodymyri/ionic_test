@@ -1,0 +1,18 @@
+@mixin extjs-button-treenav-ui() {
+  @include extjs-button-small-ui(
+          $ui: 'treenav',
+          $font-size: $criterion-button-font-size,
+          $font-weight: $criterion-button-font-weight,
+          $padding: $criterion-button-treenav-padding,
+          $text-padding: $criterion-button-treenav-text-padding,
+          $border-radius: 0,
+          $background-color: $criterion-button-treenav-color,
+          $background-color-over: lighten($criterion-button-treenav-color, 5%),
+          $background-color-pressed: lighten($criterion-button-treenav-color, 2%),
+          $color: $criterion-button-treenav-text-color,
+          $glyph-color: $criterion-button-treenav-text-color,
+          $glyph-font-size: 24px
+  );
+}
+
+@include extjs-button-treenav-ui();

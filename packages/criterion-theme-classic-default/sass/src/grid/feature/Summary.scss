@@ -1,0 +1,8 @@
+.#{$prefix}grid-row-summary {
+  .#{$prefix}grid-cell,
+  .#{$prefix}grid-rowwrap,
+  .#{$prefix}grid-cell-rowbody {
+    font-weight: bold;
+    border-top: 1px solid #343434;
+  }
+}

@@ -1,0 +1,63 @@
+.#{$prefix}grid-item {
+  background: transparent;
+
+  &.#{$prefix}grid-item-over {
+    background-color: $criterion-item-hover;
+  }
+}
+
+.#{$prefix}grid-item-no-borders {
+  .#{$prefix}grid-item {
+
+    border-color: transparent !important;
+
+    .#{$prefix}first-row-in-set {
+      border-top: 1px solid $grid-border-color !important;
+      display: inline-flex;
+    }
+  }
+  table:first-child .#{$prefix}first-row-in-set {
+    border-top: none !important;
+  }
+
+  .#{$prefix}column-header {
+    border-right: none !important;
+  }
+
+  .#{$prefix}grey-column {
+    background-color: #F6F6F6 !important;
+  }
+}
+
+.#{$prefix}grid-row.active {
+
+  td > .#{$prefix}grid-cell-inner{
+    color: $base-color;
+  }
+
+  td:first-child {
+
+    position: relative;
+
+    &:before {
+      content: '';
+      background-color: $base-color !important;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      margin-top: 0;
+    }
+  }
+}
+
+.#{$prefix}grid-dirty-cell > .#{$prefix}grid-cell-inner:after {
+  content: "\2B24";
+  color: $criterion-ess-base-color;
+  font-size: 9px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}

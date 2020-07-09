@@ -1,0 +1,33 @@
+.x-textfield {
+  &.x-readonly {
+    &.x-focused .x-input-wrap-el {
+      border-color: transparent !important;
+    }
+
+    .x-underline-el:before {
+      display: none;
+    }
+
+  }
+
+  .x-body-wrap-el {
+    border: 1px solid $criterion-light-gray;
+    border-radius: 4px;
+    padding: 0 8px;
+  }
+
+  .x-icon-el {
+    &:before {
+      font-size: 22px !important;
+    }
+
+    &.x-font-icon {
+      color: $criterion-dark-gray;
+    }
+  }
+
+  .x-underline-el {
+    background-color: transparent;
+  }
+
+}

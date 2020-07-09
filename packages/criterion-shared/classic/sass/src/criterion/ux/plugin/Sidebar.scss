@@ -1,0 +1,130 @@
+.criterion-modal, .criterion-fullscreen-popup {
+
+  background-color: #fff;
+  border-radius: 0;
+  border-width: 0;
+
+  > .#{$prefix}header {
+    background: $base-color;
+    border: none;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .#{$prefix}title-text {
+      color: #fff;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .#{$prefix}tool-close {
+      background-image: theme-background-image('tool/close-icon-white') !important;
+      width: 18px;
+      height: 18px;
+    }
+
+    .criterion-btn-transparent {
+      .#{$prefix}btn-inner {
+        color: #fff !important;
+      }
+
+      .#{$prefix}btn-glyph {
+        color: #fff !important;
+      }
+    }
+
+    .criterion-moduletoolbar-btn-secondary {
+      &, &.#{$prefix}btn-over {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .criterion-fullscreen-header {
+    .x-toolbar {
+      background-color: transparent !important;
+    }
+  }
+
+  &.transparent-bg-header {
+    border-radius: 10px;
+    > .#{$prefix}header {
+
+      background-color: white;
+      border-bottom: 1px solid $criterion-border-light-grey !important;
+
+      .#{$prefix}title-text {
+        color: #333333;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .#{$prefix}tool-close {
+        background-image: theme-background-image('tool/close-icon') !important;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .#{$prefix}grid-with-row-lines {
+    margin: 0 !important;
+  }
+
+  .fields-holder {
+    padding: 0 0 10px 0 !important;
+    height: 100px;
+  }
+
+  .full-width {
+    padding: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+  div.buttons-pane {
+    padding: 10px 0 !important;
+    background-color: #f1f1f1;
+    border: 1px solid #ebebeb;
+  }
+
+  .#{$prefix}tool-close {
+    background-image: theme-background-image('tool/close-icon') !important;
+    background-color: transparent;
+  }
+
+}
+
+.drag-over {
+  border: 2px dotted $criterion-green !important;
+}
+
+.#{$prefix}panel-ghost {
+
+  border-radius: 5px;
+
+  .#{$prefix}header-ghost {
+    background-color: #fff;
+    border-bottom: 1px solid #e2e2e2 !important;
+    height: 60px;
+    padding: 20px 0 0 18px;
+    letter-spacing: 1px;
+
+    .#{$prefix}tool {
+      right: 12px !important;
+      left: auto !important;
+      top: -7px !important;
+    }
+
+    .#{$prefix}tool-close {
+      background-image: theme-background-image('tool/close-icon') !important;
+      background-color: transparent;
+    }
+
+    .#{$prefix}title-text {
+      color: #333;
+    }
+
+  }
+
+}

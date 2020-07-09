@@ -1,0 +1,9 @@
+{
+    "result" : [{
+        "id" : 1,
+        "classId" : 46,
+        "attachmentTypeCd" : "CLASS_READING",
+        "name" : "Test"
+    }],
+    "success" : true
+}

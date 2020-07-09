@@ -1,0 +1,30 @@
+.criterion-ux-datalist {
+
+  padding-left: 10px;
+  
+  .x-datalist-item {
+    display: inline-block;
+    position: relative;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #efefef;
+    border: 1px solid #d5d5d5;
+    padding: 0 19px 0 5px;
+    margin: 0 4px 2px 0;
+    color: #000;
+
+    .x-datalist-item-close {
+      width: 12px;
+      height: 12px;
+      top: 1px;
+      right: 1px;
+      background-image: url(images/form/tag-field-item-close.png);
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+}

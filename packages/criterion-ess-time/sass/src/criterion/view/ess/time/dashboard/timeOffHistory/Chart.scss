@@ -1,0 +1,61 @@
+.criterion-selfservice-time-dashboard-time-off-history-chart {
+
+  background: $criterion-main-panel-ess-bg !important;
+
+  .x-panel-body-default {
+    background: $criterion-main-panel-ess-bg !important;
+  }
+
+  .clock {
+    color: $criterion-ess-base-color;
+    font-size: 18px;
+    margin-left: 3px;
+  }
+
+}
+
+.criterion-chart-tooltip {
+  padding: 10px 15px 10px 15px;
+  .title {
+    font-weight: bold;
+  }
+  .types {
+    margin-top: 5px;
+    color: $criterion-tooltip-items-secondary-color;
+  }
+  tr.head {
+    font-weight: bold;
+  }
+  td.right {
+    text-align: right;
+  }
+  td.line {
+    border-top: 1px solid $criterion-tooltip-total-line-color;
+  }
+  tr.total>td {
+    padding-top: 10px;
+  }
+  tr.total::before>td {
+    padding-bottom: 5px;
+  }
+  table {
+    margin-top: 20px;
+  }
+  .balance {
+    color: $criterion-ess-base-color;
+  }
+  .gray {
+    color: #A6A6A6;
+  }
+  .lightgray {
+    color: #EDEDED;
+  }
+  .circle:before {
+    content: ' \25CF';
+    font-size: 20px;
+  }
+}
+
+
+
+

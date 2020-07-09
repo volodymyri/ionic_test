@@ -1,0 +1,39 @@
+.criterion-picker-time {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+
+  .x-panel-body-default {
+    background-color: white !important;
+  }
+
+  .criterion-btn-ess-new-light {
+    padding: 0;
+  }
+
+  .x-field {
+    margin-bottom: 0 !important;
+  }
+
+  .x-form-text-default {
+    padding: 8px 15px 7px !important;
+  }
+
+  .x-toolbar-footer {
+    border: 0;
+    background-color: white;
+  }
+}
+
+.#{$prefix}form-trigger-clock {
+  @if $enable-font-icons and ($form-clock-trigger-glyph != null) {
+    @include font-icon($form-clock-trigger-glyph, $line-height: null);
+  } @else {
+    background-image: theme-background-image('form/trigger');
+
+    @if $include-rtl {
+      &.#{$prefix}rtl {
+        background-image: theme-background-image('form/trigger-rtl');
+      }
+    }
+  }
+}

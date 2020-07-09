@@ -1,0 +1,19 @@
+.x-tool-tool-el {
+  &.x-tool-expand-bottom,
+  &.x-tool-collapse-top {
+    background: none;
+    background-color: transparent;
+
+    &:before {
+      font-family: "Ionicons";
+    }
+  }
+
+  &.x-tool-expand-bottom:before {
+    content: "\f35f"; // android-arrow-dropdown
+  }
+
+  &.x-tool-collapse-top:before {
+    content: "\f365"; // android-arrow-dropup
+  }
+}

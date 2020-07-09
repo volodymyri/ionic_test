@@ -1,0 +1,27 @@
+.criterion-selfservice-dashboard-announcements {
+  p {
+    margin: 0 10px 0 20px;
+  }
+
+  .announcement-title {
+    color: $base-color;
+    margin-bottom: 10px;
+  }
+
+  .announcement-small-text, .announcement-text {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .announcement-date {
+    margin-bottom: 10px;
+    color: $criterion-gray;
+    font-size: 10px;
+  }
+
+  .announcement-wrap {
+    &.x-view-item-focused {
+      outline: none !important;
+    }
+  }
+}

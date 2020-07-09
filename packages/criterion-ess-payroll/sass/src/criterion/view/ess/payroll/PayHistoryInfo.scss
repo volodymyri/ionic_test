@@ -1,0 +1,56 @@
+.criterion-selfservice-payroll-pay-history-info {
+  .incomes, .taxes, .deductions {
+    margin: 10px 0;
+  }
+
+  .title {
+    font-weight: bold;
+    border-bottom: 1px solid #CCC;
+  }
+
+  .values {
+    width: 400px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      clear: both;
+      margin: 0;
+      padding: 0 0 1.8em 0;
+      position: relative;
+      border-bottom: dotted 2px #999;
+    }
+
+    strong {
+      background: #fff;
+      padding: 0 10px 0 0;
+      font-weight: normal;
+      position: absolute;
+      bottom: -.3em;
+      left: 0;
+    }
+
+    em {
+      background: #fff;
+      padding: 0 0 0 5px;
+      position: absolute;
+      bottom: -.2em;
+      right: 0;
+    }
+  }
+
+}
+
+.x-grid-item.x-grid-item-selected {
+  .values {
+
+    strong {
+      background: #eeeeee;
+    }
+
+    em {
+      background: #eeeeee;
+    }
+  }
+}

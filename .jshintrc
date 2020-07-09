@@ -1,0 +1,29 @@
+{
+    "expr":true,
+    "bitwise":true,
+    "curly":true,
+    "immed":true,
+    "trailing":true,
+    "laxbreak":true,
+    "loopfunc":false,
+    "noarg":true,
+    "nonew":true,
+    "camelcase":true,
+    "newcap":true,
+    "eqeqeq":true,
+    "es3":true,
+    "undef":true,
+    "unused":true,
+    "indent":4,
+    "browser":true,
+    "globals":{
+        "Ext":true,
+        "Deft":true,
+        "console":true,
+        "JSON":true,
+        "criterion":true,
+        "web":true,
+        "ess":true,
+        "i18n":true
+    }
+}

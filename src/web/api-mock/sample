@@ -1,0 +1,18 @@
+{"result" : [
+    {
+        "id" : 1,
+        "combined" : "1",
+        "result" : [
+            {
+                "id" : 2,
+                "combined" : "2",
+                "leaf" : true
+            },
+            {
+                "id" : 3,
+                "combined" : "3",
+                "leaf" : true
+            }
+        ]
+    }
+], "success" : true}

@@ -1,0 +1,17 @@
+.criterion-selfservice-time-shift-assignments {
+  .ext-cal-evr, .ext-cal-evt {
+    &.defBlock {
+      background: rgba(255, 250, 0, 0.27) !important;
+      border: 1px solid rgb(255, 250, 0) !important;
+
+      .ext-cal-evb {
+        border: 0;
+      }
+
+      dl {
+        border: 0;
+        background: transparent;
+      }
+    }
+  }
+}

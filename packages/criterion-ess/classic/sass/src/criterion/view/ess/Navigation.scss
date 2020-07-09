@@ -1,0 +1,239 @@
+$criterion-navigation-1: #FFFFFF;
+$criterion-navigation-2: #292f3a;
+$criterion-navigation-3: $criterion-ess-base-color;
+$criterion-navigation-4: #3d434e;
+$criterion-navigation-5: #292f3a;
+
+.criterion-ess-navigation {
+  background-color: $criterion-navigation-2;
+  padding: 0;
+
+  &.criterion-ess-navigation-dynamic {
+    border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+.criterion-view-ess-navigation-separator {
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-color: transparent !important;
+}
+
+.criterion-view-ess-navigation-dynamic-button, .criterion-view-ess-navigation-static-glyph-button, .criterion-view-ess-navigation-static-glyph-button-trigger {
+  border: none !important;
+  background-color: transparent !important;
+
+  .x-btn-glyph, .x-btn-icon-el-default-toolbar-small, .x-btn-icon-el-default-small {
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    width: 24px;
+    color: darken($criterion-navigation-1, 40) !important;
+  }
+
+  .x-btn-inner-default-small {
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: darken($criterion-navigation-1, 40);
+  }
+}
+
+.criterion-view-ess-navigation-static-glyph-button {
+  padding: 9px 0 9px 10px;
+  max-width: 250px;
+  box-shadow: none;
+}
+
+.criterion-view-ess-navigation-static-glyph-button-trigger {
+  padding: 9px 10px !important;
+  box-shadow: none;
+
+  .x-btn-glyph, .x-btn-icon-el-default-small {
+    font-size: 14px;
+  }
+}
+
+.criterion-view-ess-navigation-static-button:not(.criterion-view-ess-navigation-toggle) .ess-navigation-static-menu-button,
+.criterion-view-ess-navigation-dynamic-button .ess-navigation-static-menu-button {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $criterion-navigation-4;
+  }
+}
+
+.highlighted-button.criterion-view-ess-navigation-static-button:not(.criterion-view-ess-navigation-toggle) .ess-navigation-static-menu-button,
+.highlighted-button.criterion-view-ess-navigation-dynamic-button .ess-navigation-static-menu-button {
+  &:hover {
+    background-color: $criterion-navigation-4 !important;
+  }
+}
+
+.criterion-view-ess-navigation-dynamic-button:not(.criterion-view-ess-navigation-toggle).x-btn-over {
+  background-color: $criterion-navigation-4 !important;
+}
+
+.highlighted-button.criterion-ess-navigation-menu-btn,
+.highlighted-button.criterion-view-ess-navigation-dynamic-button,
+.highlighted-button .ess-navigation-static-menu-button {
+  .x-btn-glyph, .x-btn-icon-el-default-toolbar-small, .x-btn-icon-el-default-small, .x-btn-inner-default-small {
+    opacity: 1 !important;
+  }
+}
+
+.ess-navigation-menu {
+  @mixin criterion-ess-navigation-menu-button() {
+    @include criterion-button(transparent, transparent, $criterion-navigation-1, transparent, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+
+    padding: 5px 25px 5px 10px;
+    border-radius: 3px;
+
+    .x-btn-inner {
+      padding: 0;
+      overflow: visible;
+      font-size: 13px;
+    }
+  }
+
+  .criterion-ess-navigation-menu-btn.highlighted-button {
+    background-color: $criterion-navigation-5 !important;
+    overflow: visible;
+
+    .x-btn-inner {
+      color: $criterion-ess-base-color !important;
+    }
+  }
+
+  border: none !important;
+
+  .criterion-ess-navigation-menu-section {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    .x-box-inner {
+      overflow: visible;
+    }
+
+    &:not(.section-last-visible):after {
+      content: '';
+      display: block;
+      margin: 8px 25px 8px 6px;
+
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .ess-navigation-menu .criterion-ess-navigation-menu-section:not(:last-child):after
+  .x-menu-header-title {
+    background-color: rgba($criterion-navigation-2, 0.95);
+    padding: 20px 20px 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .x-menu-body-default {
+    background-color: rgba($criterion-navigation-2, 0.95);
+    padding: 10px 0 20px;
+  }
+
+  .criterion-ess-navigation-menu-heading {
+    font-size: 14px;
+    font-weight: $criterion-font-weight-semibold;
+    padding: 10px 0 10px 20px;
+    text-transform: uppercase;
+  }
+
+  .criterion-ess-navigation-menu-btn {
+    @include criterion-ess-navigation-menu-button();
+    margin-left: 0;
+
+    .x-btn-inner {
+      font-weight: $criterion-font-weight-regular;
+    }
+
+    &.x-btn-over {
+      background-color: lighten($criterion-navigation-4, 5);
+
+      .x-btn-inner-default-small {
+        opacity: 1;
+      }
+    }
+
+    .x-btn-wrap {
+      margin-left: 43px;
+    }
+  }
+
+  &.criterion-ess-navigation-dynamic-menu {
+    .criterion-ess-navigation-menu-btn {
+      .x-btn-wrap {
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+.criterion-view-ess-navigation-static-button {
+  .ess-navigation-menu {
+    padding: 5px 0;
+
+    .criterion-ess-navigation-menu-heading {
+      padding-top: 0;
+    }
+  }
+}
+
+.criterion-view-ess-navigation-static-button, .criterion-view-ess-navigation-dynamic-button {
+  border-top-color: darken($criterion-navigation-2, 10) !important;
+}
+
+.criterion-view-ess-navigation-dynamic-button, .ess-navigation-static-menu-button {
+  &:hover {
+    .x-btn-icon-el-default-small, .x-btn-icon-el-default-toolbar-small, .x-btn-inner-default-small {
+      opacity: 1;
+    }
+  }
+}
+
+.criterion-ess-navigation-dynamic-menu {
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 3px 10px 0 rgba(40, 46, 58, 0.18);
+  border-radius: 3px;
+
+  .criterion-ess-navigation-menu-section:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .criterion-ess-navigation-menu-section:not(:last-child):after {
+    margin: 8px 0;
+  }
+
+  .criterion-ess-navigation-menu-section:not(.section-last-visible):after {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .criterion-ess-navigation-menu-btn {
+    padding: 5px 25px 5px 9px;
+    border-radius: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+
+    &:hover .x-btn-inner-default-small {
+      opacity: 1;
+    }
+  }
+
+  .x-menu-header-title {
+    padding: 15px 20px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+
+    text-transform: uppercase;
+    font-weight: $criterion-font-weight-semibold;
+  }
+}

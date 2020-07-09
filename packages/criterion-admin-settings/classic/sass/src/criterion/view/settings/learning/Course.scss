@@ -1,0 +1,25 @@
+.criterion-settings-learning-course {
+  .criterion-tab-bar-top-border {
+    .x-panel-body {
+      border: none !important;
+    }
+
+    .x-tab-default {
+      padding: 10px 45px;
+    }
+
+    .criterion-grid-panel .x-grid-view {
+      background-color: #ffffff;
+    }
+  }
+
+  .criterion-tab-bar {
+    .criterion-grid-panel {
+      border: 1px solid #e5e5e5;
+
+      .x-toolbar-default {
+        padding: 8px;
+      }
+    }
+  }
+}

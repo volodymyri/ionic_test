@@ -1,0 +1,84 @@
+.criterion-selfservice-time-attendance-dashboard-period-hours-bar-widget {
+  height: 20px;
+  margin: 10px 0 0 5px;
+
+  > .x-box-inner {
+    height: 20px !important;
+  }
+
+  .bar-block {
+    height: 20px;
+    width : 190px;
+    border: 1px solid $criterion-border-light-grey;
+    border-radius: 3px;
+
+    > .x-box-inner {
+      height: 20px !important;
+      width : 190px !important;
+    }
+
+    .regular {
+      background-color: $criterion-green-d;
+      height: 18px
+    }
+
+    .overtime {
+      background-color: $criterion-yellow;
+      height: 18px
+    }
+
+    .additional {
+      background-color: $criterion-red;
+      height: 18px
+    }
+  }
+}
+
+.hours-bar-info-tip {
+  padding: 1px;
+
+  .param {
+    display: flex;
+
+    &.regular {
+      .mark {
+        background-color: $criterion-green-d;
+      }
+    }
+
+    &.overtime {
+      .mark {
+        background-color: $criterion-yellow;
+      }
+    }
+
+    &.additional {
+      .mark {
+        background-color: $criterion-red;
+      }
+    }
+  }
+
+  .mark {
+    width: 10px;
+    height: 10px;
+    margin: 3px 5px 0 0;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  .title {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .time {
+    flex: 1;
+    text-align: right;
+    font-size: 10px;
+    margin: 0 0 0 5px;
+    font-weight: bold;
+
+
+  }
+}

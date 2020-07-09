@@ -1,0 +1,267 @@
+/*
+  For generic mixins and imports.
+*/
+@mixin criterion-text-semibold {
+  font-weight: 600;
+}
+
+@mixin criterion-button($background-color, $background-hover-color, $font-color, $border-color, $border-radius:null, $text-transform:inherit) {
+  background-color: $background-color !important;
+  border-color: $border-color !important;
+
+  @if ($border-radius != null) {
+    border-radius: $border-radius;
+  }
+
+  .x-btn-inner {
+    color: $font-color !important;
+    text-transform: $text-transform;
+  }
+
+  .x-btn-glyph {
+    color: $font-color;
+    opacity: 1 !important;
+  }
+
+  @if $background-color != 'transparent' {
+    background-color: $background-color;
+
+    &.x-btn-over, &.x-btn-focus, &.x-btn-disabled {
+      background-color: $background-hover-color;
+      border-color: darken($border-color, 10);
+    }
+  } @else {
+    &.x-btn-over, &.x-btn-focus, &.x-btn-disabled {
+      background-color: transparent;
+      border-color: darken($border-color, 10);
+    }
+
+    &.x-btn-over {
+      .x-btn-inner {
+        color: darken($font-color, 10);
+      }
+      .x-btn-glyph {
+        color: darken($font-color, 10);
+      }
+    }
+  }
+
+  &.x-btn-default-small, &.x-btn-default-toolbar-small {
+    &.x-toolbar-item {
+      padding : 10px;
+    }
+  }
+}
+
+@mixin criterion-button-frame($border-color, $border-hover-color, $font-color, $border-radius) {
+  background-color: transparent !important;
+  border-color: $border-color !important;
+  @if $border-radius {
+    border-radius: $border-radius;
+  }
+
+  .x-btn-inner {
+    color: $font-color !important;
+  }
+
+  .x-btn-glyph {
+    color: $font-color !important;
+    opacity: 1 !important;
+  }
+
+  &.x-btn-over, &.x-btn-focus, &.x-btn-disabled {
+    background-color: transparent !important;
+    border-color: $border-hover-color !important;
+  }
+
+  &.x-btn-over {
+    .x-btn-inner {
+      color: darken($font-color, 10) !important;
+    }
+    .x-btn-glyph {
+      color: darken($font-color, 10) !important;
+    }
+  }
+}
+
+@mixin criterion-clearfix {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin criterion-round-picture($size) {
+  width: $size;
+  height: $size;
+
+  @include border-radius($size / 2);
+
+  img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@mixin criterion-box($bgcolor, $textcolor) {
+  padding: 0 4px;
+  border-radius: 2px;
+  background-color: $bgcolor;
+  color: $textcolor;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin wordwrap {
+  white-space: pre-wrap;      /* CSS3 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap;     /* Opera <7 */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  word-wrap: break-word;      /* IE */
+}
+
+@mixin top-gradient($start-color, $end-color) {
+  background: -moz-linear-gradient(top, $start-color 0%, $end-color 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, $start-color 0%, $end-color 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $start-color 0%, $end-color 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $start-color 0%, $end-color 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $start-color 0%, $end-color 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color', GradientType=0); /* IE6-9 */
+}
+
+@mixin criterion-ionicon-glyph($content, $color) {
+  background-image: none;
+
+  &:after {
+    font-family: Ionicons;
+    content: $content;
+    line-height: 14px;
+    color: $color;
+    opacity: 0.9;
+  }
+}
+
+/**
+* Simplified button mixin for toolbar buttons
+*/
+@mixin criterion-moduletoolbar-button($nav-color, $nav-active-color, $back, $back-active, $border, $border-active) {
+  @include border-radius(0);
+
+  background: $back;
+  border-color: $border;
+  border-width: 0 1px;
+  margin: 0;
+  padding: 12px 10px;
+
+  .x-btn-glyph, .x-btn-inner {
+    color: $nav-color;
+  }
+
+  &.x-btn-over, &.x-btn-menu-active, &.x-btn-pressed {
+    background: $back-active;
+    border-color: $border-active;
+    box-shadow: none !important;
+
+    .x-btn-glyph, .x-btn-inner {
+      color: $nav-active-color;
+    }
+  }
+
+  .x-btn-arrow-right:after {
+    color: $nav-color;
+  }
+
+  .x-btn.x-btn-disabled {
+    background-color: $back;
+    .x-btn-glyph, .x-btn-inner {
+      color: lighten($nav-color, 20%);
+    }
+  }
+
+  &.x-btn-over,
+  &.x-btn-focus,
+  &.x-btn-pressed {
+    box-shadow: none !important;
+  }
+
+  &.x-btn-focus{
+    background: $back;
+  }
+}
+
+@mixin criterion-moduletoolbar-button-arrow($nav-color, $nav-active-color, $back, $back-active, $border, $border-active) {
+  @include criterion-moduletoolbar-button($nav-color, $nav-active-color, $back, $back-active, $border, $border-active);
+
+  padding: 14px 4px;
+
+  .x-btn-inner-default-toolbar-large {
+    padding : 0 8px;
+  }
+
+  &.x-btn-pressed {
+    .x-btn-glyph, .x-btn-inner {
+      //TODO: Use bold and prevent width changing
+      //font-weight: bold;
+      text-shadow: 0 0 1px #fdfdfd;
+    }
+
+    .x-btn-wrap::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      font-family: Ionicons;
+      content: '\f10d';
+      line-height: 6px;
+      font-size: 16px;
+      color: $nav-color;
+      text-align: center;
+
+      .x-ie11 & {
+        bottom: -1px;
+      }
+    }
+  }
+}
+
+@mixin criterion-moduletoolbar-menu($nav-color, $nav-active-color, $background, $background-sel) {
+  background: $background;
+
+  .x-menu-body {
+    background: $background;
+  }
+
+  .x-menu-item-active {
+    background-color: $background-sel;
+
+    .x-menu-item-text {
+      color: $nav-active-color;
+    }
+  }
+
+  .x-menu-item-text {
+    color: $nav-color;
+  }
+
+  .x-menu-item-glyph {
+    color: $nav-color;
+  }
+}
+
+.x-css-shadow {
+  box-shadow: rgba(0, 0, 0, 0.08) 0 5px 25px 5px !important;
+}

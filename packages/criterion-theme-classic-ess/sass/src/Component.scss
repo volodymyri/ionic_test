@@ -1,0 +1,82 @@
+@mixin criterion-form-trigger($content, $color, $bgcolor) {
+  background: $bgcolor;
+  width: 40px;
+  left: 0;
+  padding: 0;
+  border-left: 1px solid #CECECE;
+
+  @include criterion-ionicon-glyph($content, $color);
+
+  &:after {
+    line-height: 34px;
+    position: relative;
+    opacity: 0.7;
+  }
+  &.x-form-trigger-over:after {
+    opacity: 0.9;
+  }
+}
+
+.criterion-component-as-title {
+  .#{$prefix}autocontainer-innerCt {
+    font-weight: $criterion-font-weight-bold;
+  }
+}
+
+.gross-pay {
+  font-weight: $criterion-font-weight-semibold;
+  font-size: 30px;
+  color: #343C4F;
+  text-align: left;
+}
+
+.gross-pay-sub {
+  font-weight: $criterion-font-weight-semibold;
+  font-size: 14px;
+  color: #909AB5;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.next-pay-date {
+  padding: 16px;
+  background: rgba(229, 232, 237, 0.5);
+  border-radius: 10px;
+  color: #0096EB;
+  font-weight: $criterion-font-weight-semibold;
+  font-size: 15px;
+  position: absolute !important;
+  bottom: 0;
+  display: block;
+  min-height: 54px;
+
+  .title {
+    color: #909AB5;
+    font-weight: $criterion-font-weight-semibold;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+.popup-options {
+  box-shadow: 0 6px 20px rgba(11, 27, 38, 0.1);
+  border-radius: 10px;
+  border: none;
+  overflow: visible;
+
+  .x-menu-body, .x-menu-bodyWrap {
+    border-radius: 10px;
+  }
+
+  &:after {
+    content: '';
+    width: 1px;
+    height: 6px;
+    border: 8px solid transparent;
+    border-bottom: 9px solid white;
+    position: absolute;
+    top: -22px;
+    right: 11px;
+    box-shadow: 13px 20px 20px rgba(11, 27, 38, 0.1);
+  }
+}

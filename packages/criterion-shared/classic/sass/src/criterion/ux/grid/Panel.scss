@@ -1,0 +1,21 @@
+.criterion-gridpanel {
+  &.variableRowHeight {
+    .x-grid-cell-inner {
+      white-space: normal !important;
+    }
+  }
+}
+
+.criterion-grid-centred {
+  .x-grid-td {
+    vertical-align: middle;
+  }
+}
+
+span.panel-header-right {
+  float: right;
+}
+
+.x-grid-group-hd-not-collapsible .x-grid-group-title {
+  background: none;
+}

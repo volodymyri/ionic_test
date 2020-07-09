@@ -1,0 +1,133 @@
+.criterion-tab-bar-left {
+  background-color: $criterion-tab-bar-left-background;
+
+  .x-box-scroller-tab-bar-default {
+
+    background: transparent none repeat scroll 0% 0%;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 2px;
+
+    &::after {
+      font-family: Ionicons;
+      color: $criterion-tab-bar-left-item-color;
+      display: block;
+    }
+
+    &.x-box-scroller-top::after {
+      content: $ionicon-var-chevron-up;
+    }
+
+    &.x-box-scroller-bottom::after {
+      content: $ionicon-var-chevron-down;
+    }
+  }
+
+  .x-tab-section-label {
+    color: $criterion-tab-bar-section-label-item-color;
+    font-size: $criterion-font-size-bigger;
+    padding: 0 24px 20px;
+  }
+
+  .x-tab-button {
+    text-align: left;
+  }
+
+  .x-tab.x-tab-active.x-tab-default {
+    @include box-shadow(none);
+    background-color: $criterion-tab-bar-left-item-background-active;
+    border: none;
+
+    .x-tab-inner {
+      color: $criterion-tab-bar-left-item-color-active;
+    }
+  }
+
+  .x-tab-default-left {
+    background: none;
+    border-radius: 0;
+    padding: 10px 24px;
+    border: none;
+
+    &.x-tab-disabled {
+      border: none;
+      background: none;
+    }
+
+    &.x-tab-focus, &.x-tab-over {
+      @include box-shadow(none);
+      border: none;
+      background: $criterion-tab-bar-left-background;
+    }
+
+    .x-tab-inner {
+      color: $criterion-tab-bar-left-item-color;
+      text-transform: uppercase;
+    }
+
+    &.with-sub-items {
+      padding-right: 56px;
+
+      .x-tab-inner {
+        color: $criterion-side-text-heading-color;
+      }
+    }
+
+    &.sub-item {
+      padding-left: 40px;
+
+      .x-tab-inner {
+        color: $criterion-tab-bar-left-sub-item-color;
+        text-transform: none
+      }
+
+      &.x-tab-active.x-tab-default {
+        .x-tab-inner {
+          color: $criterion-tab-bar-left-sub-item-color-active !important;
+        }
+      }
+    }
+  }
+
+  .x-tab-bar-body-default {
+    padding: 20px 0 40px 0;
+    border-right: $criterion-side-border;
+  }
+}
+
+.criterion-tab-bar-top-border {
+  .x-tab-bar-default {
+    background: $criterion-container-background !important;
+  }
+
+  .x-tab-bar-default-top {
+    @include border-radius(0);
+
+    &>.x-tab-bar-body-default{
+      padding: 0;
+    }
+  }
+
+  .x-tab-default {
+    border-color: #e2e2e2;
+    cursor: pointer;
+    //background: transparent;
+
+    border-bottom-width: 0;
+    margin-left: 10px !important;
+
+    padding: 10px 15px;
+
+    &.x-tab-default-top {
+      @include border-radius(0);
+    }
+
+    &.x-tab-focus {
+      @include box-shadow(none);
+    }
+  }
+
+  .x-panel-body {
+    border-top: 1px solid #e2e2e2 !important;
+  }
+}

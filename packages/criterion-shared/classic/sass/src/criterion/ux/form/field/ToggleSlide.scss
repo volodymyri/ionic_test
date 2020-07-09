@@ -1,0 +1,61 @@
+.criterion-toggle {
+
+  .toggler {
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 11px;
+    background-color: $criterion-toggle-body-color;
+    border-radius: 6px;
+    vertical-align: middle;
+    margin-left: 2px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      background-color: $criterion-toggle-no-color;
+      border-radius: 10px;
+      left: -2px;
+      top: -4px;
+      transition: left 0.5s ease, background-color 0.5s ease;
+    }
+  }
+
+  &.x-form-cb-checked {
+    .toggler {
+      &::after {
+        background-color: $criterion-toggle-color;
+        left: 15px;
+      }
+    }
+  }
+
+  .x-form-checkbox {
+    background: none;
+    width: 38px;
+    height: 24px;
+
+    .x-form-cb-input {
+      cursor: pointer;
+    }
+  }
+
+  .x-form-cb-wrap-default {
+    padding-top: 7px;
+  }
+
+  .x-form-cb-default {
+    margin-top: 5px;
+  }
+
+  .x-form-cb-after {
+    left: 0;
+    right: auto;
+    opacity: 0;
+  }
+}

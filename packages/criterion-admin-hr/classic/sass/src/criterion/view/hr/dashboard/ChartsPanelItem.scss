@@ -1,0 +1,31 @@
+.criterion-hr-dashboard-charts-panel-item {
+  padding: 5px 0 5px;
+
+  & > .x-panel-header-default {
+    padding: 5px 5px 10px;
+    background-color: transparent;
+
+    .x-title-text {
+      font-size: 16px;
+    }
+  }
+
+  & > .x-panel-bodyWrap > .x-panel-body-default {
+    padding: 5px;
+    background-color: transparent;
+
+    & > .criterion-hr-dashboard-charts-panel-item-wrap {
+      background-color: white;
+      @include box-shadow(0px 0px 5px rgba(24, 24, 25, 0.1));
+    }
+  }
+
+  &-wrap {
+    padding: 10px;
+  }
+
+  .criterion-hr-dashboard-panel-item-config {
+    padding: 5px;
+    z-index: 5;
+  }
+}

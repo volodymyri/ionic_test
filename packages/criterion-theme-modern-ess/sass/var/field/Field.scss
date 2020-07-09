@@ -1,0 +1,13 @@
+$field-label-background-color: dynamic(null);
+$textfield-input-line-height-big: dynamic(1.375em);
+$textfield-input-padding-big: dynamic(($content-padding - 4) 0);
+$field-vertical-spacing-big: dynamic(8px);
+
+$field-label-color: dynamic(#a0a0a0);
+$field-label-font-weight: dynamic($font-weight-bold);
+$field-label-line-height-big: dynamic(22px);
+
+// https://fiddle.sencha.com/#view/editor&fiddle/2ir8
+// empty required selectfield with label grows on focus with +1px which fires scroll event.
+// if parent is scrollable this field places picker into wrong position while calculating scroll bar position.
+$field-required-indicator-line-height: dynamic($field-required-indicator-font-size);

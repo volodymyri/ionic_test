@@ -1,0 +1,32 @@
+.criterion-no-reports-img {
+  background: url("images/reports-placeholder-new.png") center center no-repeat;
+}
+
+.criterion-no-reports-text {
+  text-align: center;
+  overflow: hidden !important;
+  color: #BDBDBD;
+  font-weight: 300;
+}
+
+.criterion-arrow {
+  background: url("images/placeholder-arrow.png") center center no-repeat;
+  margin-right: 340px;
+}
+
+.criterion-loader-reports-img {
+  background: url("images/rolling-loader.gif") center center no-repeat;
+  margin-top: -150px !important;
+}
+
+.criterion-loader-reports-text {
+  text-align: center;
+  color: #666;
+  margin-top: -70px !important;
+}
+
+.criterion-failed-reports-text {
+  text-align: center;
+  color: #666;
+  margin-top: -70px !important;
+}

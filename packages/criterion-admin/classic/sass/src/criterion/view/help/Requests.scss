@@ -1,0 +1,82 @@
+$criterion-help-status-open-color : #0096eb;
+$criterion-help-status-pending-color : #eb9000;
+$criterion-help-status-solved-color : #00af5f;
+
+.criterion-help-requests {
+  .criterion-help-request-entry {
+    background-color: #fff;
+    border-left : 7px solid #fff;
+    cursor : pointer;
+
+    @include box-shadow(0px 0px 5px rgba(24, 24, 25, 0.1));
+
+    &.open, &.new {
+      border-left-color : $criterion-help-status-open-color;
+    }
+    &.pending {
+      border-left-color : $criterion-help-status-pending-color;
+    }
+    &.solved {
+      border-left-color : $criterion-help-status-solved-color;
+    }
+
+    padding : 10px 15px;
+    margin-top: 15px;
+
+    h2 {
+      font-size: 15px;
+      font-weight: $criterion-font-weight-semibold;
+      margin : 0;
+    }
+
+    .title {
+      margin: 10px 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    table {
+      tr {
+        font-size: 12px;
+
+        td {
+          padding: 0 5px 0 0 ;
+
+          &.split {
+            padding: 0 5px 0 15px;
+          }
+
+          &.status {
+            text-transform: capitalize;
+
+            &.open, &.new {
+              color : $criterion-help-status-open-color;
+            }
+            &.pending {
+              color : $criterion-help-status-pending-color;
+            }
+            &.solved {
+              color : $criterion-help-status-solved-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .request-info {
+    font-size: 12px;
+  }
+
+  .request-disclaimer {
+    background-color: #fbf8e7;
+    border: 1px solid #e2d798;
+  }
+
+  .empty {
+    padding: 10px;
+    text-align: center;
+    color: #3c3c3c;
+  }
+}

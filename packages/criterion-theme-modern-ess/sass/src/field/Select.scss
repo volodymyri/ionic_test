@@ -1,0 +1,37 @@
+.x-selectfield {
+  &.x-readonly, &.x-disabled {
+    .x-trigger {
+      visibility: hidden;
+    }
+  }
+
+  .x-body-wrap-el {
+    border: 1px solid $criterion-light-gray;
+    border-radius: 4px;
+    padding: 0 8px;
+  }
+
+  .x-input-el {
+    font-size: 15px;
+    color: $criterion-black;
+  }
+
+  .x-icon-el {
+    &:before {
+      font-size: 22px !important;
+    }
+
+    &.x-font-icon {
+      color: $criterion-dark-gray;
+    }
+  }
+
+  .x-underline-el {
+    background-color: transparent;
+  }
+
+  &.x-focused .x-underline-el:before {
+    height: 2px;
+    background-color: transparent;
+  }
+}

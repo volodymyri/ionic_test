@@ -1,0 +1,79 @@
+.criterion-selfservice-team {
+  .x-panel-default-framed {
+    padding: 0;
+
+    .x-panel-body-default-framed {
+      padding-top: 10px;
+    }
+  }
+
+  .criterion-side-field {
+    border-bottom: none;
+
+    .x-form-item-label-default {
+      text-transform: initial;
+      color: $battleship-grey;
+    }
+  }
+
+  .x-tree-arrows {
+    .x-tree-expander {
+      font-size: 12px;
+    }
+  }
+
+  .x-grid-row {
+
+    .x-tree-expander {
+      padding-left: 2px;
+      width: 16px;
+    }
+
+    .x-tree-elbow-img {
+      margin-right: 0;
+      text-align: left;
+
+      &.x-tree-elbow {
+        width: 8px;
+      }
+      &.x-tree-elbow-end {
+        width: 8px;
+      }
+    }
+
+    .x-tree-node-text {
+      padding-left: 0;
+    }
+  }
+
+  .criterion-side-tree {
+    border-top: 1px solid $criterion-light-gray;
+    border-bottom: 1px solid $criterion-light-gray;
+    padding: 0 10px;
+    margin-top: 10px;
+
+    .x-grid-item-selected {
+      color: $criterion-ess-base-color;
+    }
+
+    .x-grid-cell-inner-treecolumn {
+      padding: 6px 6px 6px 0;
+    }
+  }
+
+  .x-splitter-vertical {
+    background: transparent url(images/splitter/splitter.png) center center no-repeat;
+
+    .x-layout-split-left, .x-layout-split-right {
+      background-color: $criterion-ess-base-color;
+    }
+
+    .x-layout-split-left:before {
+      content: $ionicon-var-android-arrow-dropleft;
+    }
+
+    .x-layout-split-right:before {
+      content: $ionicon-var-android-arrow-dropright;
+    }
+  }
+}

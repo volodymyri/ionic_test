@@ -1,0 +1,180 @@
+.criterion-selfservice-dashboard-right-left-panel {
+
+  overflow: visible;
+  .x-box-inner {
+    overflow: visible;
+  }
+
+  .empty-text {
+    color: $grid-empty-color;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .attendance {
+    .month-year {
+      font-size: 13px;
+      color: $dark;
+      text-align: center;
+    }
+
+    .data {
+      display: block;
+      float: left;
+      width: 39px;
+      height: 32px;
+      margin: 1.5px;
+      @include border-radius(3px);
+      background-color: #e9ebed;
+      color: $battleship-grey;
+      font-weight: $criterion-font-weight-semibold;
+      text-align: center;
+      padding-top: 1px;
+      .date {
+        margin-top: 7px;
+      }
+    }
+
+    .end-of-week {
+      clear: both;
+    }
+
+    .day-name {
+      background-color: transparent;
+      font-size: 12px;
+    }
+
+    .weekend {
+      background-color: #d2d6da;
+    }
+
+    .has-hours {
+      background-color: $bluish-green;
+      color: #ffffff;
+      .date {
+        font-size: 9px;
+        margin: -3px 0 0 3px;
+        text-align: left;
+      }
+      .hours {
+        margin-top: -7px;
+        text-align: center;
+      }
+    }
+  }
+
+  .upcoming-time-off {
+    .description {
+      color: #a7afc1;
+      font-size: 13px;
+      margin: 13px;
+    }
+
+    .date-title {
+      color: $dark;
+      font-size: 13px;
+    }
+
+    .start-date {
+      color: #a7afc1;
+      font-size: 16px;
+      font-weight: $criterion-font-weight-semibold;
+    }
+
+    .start-time {
+      color: #a7afc1;
+      font-size: 11px;
+      font-weight: normal;
+    }
+
+    .end-date {
+      color: #dfb500;
+      font-size: 16px;
+      font-weight: $criterion-font-weight-semibold;
+    }
+
+    .end-time {
+      color: #dfb500;
+      font-size: 11px;
+      font-weight: normal;
+    }
+
+    .grey-line {
+      width: 21px;
+      height: 1px;
+      border: solid 1px #a7afc1;
+      display: block;
+    }
+  }
+
+  .my-pay {
+    .date-title {
+      color: $dark;
+      font-size: 13px;
+    }
+
+    .last-pay-date {
+      color: #a7afc1;
+      font-size: 16px;
+      font-weight: $criterion-font-weight-semibold;
+    }
+
+    .net-pay {
+      color: #a7afc1;
+      font-size: 11px;
+      font-weight: normal;
+    }
+
+    .next-pay-date {
+      color: $bluish-green;
+      font-size: 16px;
+      font-weight: $criterion-font-weight-semibold;
+    }
+
+    .grey-line-vertical {
+      width: 1px;
+      height: 69px;
+      border: solid 1px #e9ebed;
+      display: block;
+    }
+  }
+
+  .events {
+    .empty-text {
+      color: $grid-empty-color;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .data {
+      border-bottom: 1px solid $criterion-main-panel-ess-bg;
+      margin-bottom: 15px;
+
+      .date {
+        font-size: 12px;
+        font-weight: normal;
+        color: $dark;
+        margin-right: 13px;
+      }
+      .title {
+        font-size: 13px;
+        font-weight: $criterion-font-weight-semibold;
+        color: $dark;
+        margin-top: 5px;
+      }
+      .description {
+        font-size: 13px;
+        font-weight: normal;
+        color: #a7afc1;
+        margin: 6px 0 8px 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

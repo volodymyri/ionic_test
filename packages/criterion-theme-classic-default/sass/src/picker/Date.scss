@@ -1,0 +1,96 @@
+.#{$prefix}datepicker-column-header-inner {
+  display: inline-block;
+  margin: $datepicker-item-margin-top $datepicker-item-margin-side;
+  height: $datepicker-item-size;
+}
+
+.#{$prefix}datepicker-month .x-btn-inner {
+  font-weight: $datepicker-month-button-font-weight;
+}
+
+.#{$prefix}datepicker-date {
+  height: $datepicker-item-size;
+  width: $datepicker-item-size;
+  text-align: center;
+  display: inline-block;
+  margin: $datepicker-item-margin-top $datepicker-item-margin-side;
+  @include border-radius($datepicker-item-selected-border-radius);
+}
+
+.#{$prefix}datepicker-selected {
+  border-style: none;
+  border-color: transparent;
+
+  .#{$prefix}datepicker-date {
+    border-style: $datepicker-item-selected-border-style;
+    border-color: $datepicker-item-selected-border-color;
+    color: $datepicker-item-selected-color;
+
+    @include border-radius($datepicker-item-selected-border-radius);
+  }
+}
+
+.#{$prefix}datepicker {
+  width: (($datepicker-item-width + $datepicker-item-margin-side*2) * 7) + horizontal($datepicker-border-width);
+}
+
+.#{$prefix}datepicker-today {
+  border-style: none;
+  border-color: transparent;
+
+  .#{$prefix}datepicker-date {
+    border-color: $datepicker-item-today-border-color;
+    border-style: $datepicker-item-today-border-style;
+    border-width: $datepicker-item-today-border-width;
+    line-height: $datepicker-item-height - vertical($datepicker-item-today-border-width);  }
+}
+
+.#{$prefix}monthpicker {
+  width: auto;
+}
+
+.#{$prefix}monthpicker-months {
+  width: 50%;
+
+  .#{$prefix}monthpicker-item {
+    width: 50%;
+  }
+}
+
+.#{$prefix}monthpicker-years {
+  width: 50%;
+
+  .#{$prefix}monthpicker-item {
+    width: 50%;
+  }
+}
+
+.#{$prefix}monthpicker-yearnav {
+  background-color: $datepicker-header-background-color;
+}
+
+.#{$prefix}monthpicker-yearnav-button-ct {
+  width: 50%;
+}
+
+.#{$prefix}datepicker-footer {
+  .#{$prefix}btn {
+    margin: 0;
+    width: 100%;
+
+    .#{$prefix}btn-inner-default-small {
+      font-weight: $datepicker-footer-button-font-weight;
+      font-size: $datepicker-footer-button-font-size;
+    }
+  }
+}
+.#{$prefix}monthpicker-buttons {
+  .#{$prefix}btn {
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.#{$prefix}monthpicker-selected {
+  color: $base-color;
+}

@@ -1,0 +1,16 @@
+$criterion-icons-font-path: "../criterion-admin/icons" !default;
+
+.criterion-icon-person {
+  background-image: url('#{$criterion-icons-font-path}/person.svg');
+  background-size: contain;
+}
+
+.criterion-icon-geofence-blue {
+  background-image: url('#{$criterion-icons-font-path}/geofence-blue.svg');
+  background-size: contain;
+}
+
+.criterion-icon-geofence-grey {
+  background-image: url('#{$criterion-icons-font-path}/geofence-grey.svg');
+  background-size: contain;
+}

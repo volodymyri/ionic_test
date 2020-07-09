@@ -1,0 +1,46 @@
+.criterion-status-breadcrumb {
+  background-color: $criterion-container-background;
+  box-shadow: none;
+  padding: 20px 20px 0;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 20px;
+    background-color: #CCC;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: default !important;
+    color: $criterion-default-font-color;
+    font-size: unset;
+    margin-right: 20px;
+    opacity: 0.65;
+
+    &::after {
+      font-family: Ionicons;
+      content: $ionicon-var-ios7-arrow-right;
+      width: auto;
+      display: inline-block;
+      background: none;
+      color: $criterion-default-font-color;
+      font-weight: normal;
+      opacity: 0.65;
+      padding: 0 0 0 20px;
+    }
+
+    &:last-child:after {
+      content: '';
+    }
+
+    &.active {
+      color: $base-color;
+      font-weight: bold;
+      opacity: 1;
+    }
+  }
+}

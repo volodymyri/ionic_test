@@ -1,0 +1,142 @@
+.criterion_selfservice_dashboard {
+
+  .criterion-side-panel {
+    .x-box-scroller-body-vertical {
+      margin-top: 25px;
+    }
+    .x-panel-body-default {
+      background-color: transparent;
+    }
+  }
+
+  .x-panel-header-title-default {
+    font-weight: $font-weight-normal;
+  }
+
+  .announcements {
+    background-color: white;
+
+    .x-panel-header-default-horizontal {
+      background-color: $criterion-light-yellow !important;
+    }
+  }
+
+  .post-message-button {
+    border-radius: 3px;
+    border: solid 1px #e5e7eb !important;
+    background-color: #ffffff !important;
+    height: 40px;
+    .x-btn-inner {
+      color: #c4c4c4 !important;
+    }
+  }
+
+  .dashboard-panel {
+    .x-panel-body-default, .x-panel-header, .x-toolbar-default, .dataview {
+      background-color: #ffffff;
+    }
+    .x-panel-header {
+      .x-title-text {
+        font-size: 15px;
+        font-weight: $criterion-font-weight-semibold;
+        padding-left: 10px;
+      }
+      .x-tool-tool-el {
+        &.x-tool-expand-bottom,
+        &.x-tool-collapse-top {
+          margin-right: 17px !important;
+        }
+      }
+    }
+  }
+
+  .info-panel-element {
+    background-color: #ffffff;
+    border: 1px solid #E2E7F2;
+    @include border-radius(5px);
+    overflow: hidden;
+
+    .x-panel-header {
+      padding: 8px 0 0 16px;
+      .x-title-text {
+        font-size: 15px;
+        font-weight: $criterion-font-weight-semibold;
+        padding-left: 10px;
+      }
+      &.x-collapsed {
+        padding: 8px 0 8px 16px;
+      }
+    }
+
+    .x-panel-body {
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      -ms-box-shadow: none !important;
+      box-shadow: none !important;
+      background-color: #ffffff;
+    }
+  }
+
+  .icon-tasks {
+    background-image: url(../images/icons/tasks.svg);
+    background-size: 17px 17px;
+    width: 17px !important;
+    height: 17px !important;
+  }
+
+  .icon-time-offs {
+    background-image: url(../images/icons/time_offs.svg);
+    background-size: 16px 16px;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .icon-links {
+    background-image: url(../images/icons/links.svg);
+    background-size: 18px 18px;
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .icon-attendance {
+    background-image: url(../images/icons/attendance.svg);
+    background-size: 21px 14px;
+    width: 21px !important;
+    height: 14px !important;
+  }
+
+  .icon-events {
+    background-image: url(../images/icons/events.svg);
+    background-size: 21px 14px;
+    width: 21px !important;
+    height: 14px !important;
+  }
+
+  .icon-pay {
+    background-image: url(../images/icons/pay.svg);
+    background-size: 21px 18px;
+    width: 21px !important;
+    height: 18px !important;
+  }
+
+  .icon-upcoming-time-offs {
+    background-image: url(../images/icons/upcoming_time_offs.svg);
+    background-size: 16px 16px;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .icon-feed {
+    background-image: url(../images/icons/feed.svg);
+    background-size: 17px 17px;
+    width: 17px !important;
+    height: 17px !important;
+  }
+
+  .overflow-visible {
+    overflow: visible;
+    .x-box-inner {
+      overflow: visible;
+    }
+  }
+}

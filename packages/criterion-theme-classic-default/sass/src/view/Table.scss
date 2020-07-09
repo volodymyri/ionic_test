@@ -1,0 +1,7 @@
+.#{$prefix}grid-empty {
+  padding: 20px 0 20px;
+  color: $grid-empty-color;
+  background-color: $grid-empty-background-color;
+  font: $grid-empty-font-weight $grid-empty-font-size $grid-empty-font-family;
+  text-align: center;
+}

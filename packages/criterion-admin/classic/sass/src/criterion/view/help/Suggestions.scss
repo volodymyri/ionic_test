@@ -1,0 +1,138 @@
+$criterion-help-status-not-planned-color : #de664d;
+$criterion-help-status-planned-color : #efb16c;
+$criterion-help-status-answered-color : #a1d654;
+$criterion-help-status-completed-color : #00af5f;
+$criterion-help-status-none-color : #606060;
+
+.criterion-help-suggestions {
+  .criterion-help-post-entry {
+    background-color: #fff;
+    border-left : 7px solid #fff;
+    cursor : pointer;
+
+    @include box-shadow(0px 0px 5px rgba(24, 24, 25, 0.1));
+
+    &.not_planned {
+      border-left-color : $criterion-help-status-not-planned-color;
+    }
+    &.planned {
+      border-left-color : $criterion-help-status-planned-color;
+    }
+    &.answered {
+      border-left-color : $criterion-help-status-answered-color;
+    }
+    &.completed {
+      border-left-color : $criterion-help-status-completed-color;
+    }
+    &.none {
+      border-left-color : $criterion-help-status-none-color;
+    }
+
+    padding : 10px 15px;
+    margin-top: 15px;
+
+    .title, .details {
+      margin: 10px 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .title {
+      white-space: nowrap;
+      font-weight: $criterion-font-weight-semibold;
+    }
+
+    .details {
+      height: 56px;
+    }
+
+    table {
+      tr {
+        font-size: 12px;
+
+        td {
+          padding: 0 5px 0 0 ;
+
+          &.split {
+            padding: 0 5px 0 15px;
+          }
+
+          &.status {
+            text-transform: capitalize;
+
+            &.not_planned {
+              color : $criterion-help-status-not-planned-color;
+            }
+            &.planned {
+              color : $criterion-help-status-planned-color;
+            }
+            &.answered {
+              color : $criterion-help-status-answered-color;
+            }
+            &.completed {
+              color : $criterion-help-status-completed-color;
+            }
+            &.none {
+              color : $criterion-help-status-none-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .empty {
+    padding: 10px;
+    text-align: center;
+    color: #3c3c3c;
+  }
+
+  .view-suggestion {
+    padding: 10px;
+    background-color: #fff;
+
+    font-size: 13px;
+
+    @include box-shadow(0px 0px 5px rgba(24, 24, 25, 0.1));
+
+    td {
+      padding: 0 10px;
+    }
+
+    .label {
+      font-weight: $criterion-font-weight-bold;
+      padding-bottom: 10px;
+    }
+
+    .status {
+      font-weight: $criterion-font-weight-semibold;
+      padding-top: 10px;
+      text-transform: capitalize;
+
+      &.not_planned {
+        color : $criterion-help-status-not-planned-color;
+      }
+      &.planned {
+        color : $criterion-help-status-planned-color;
+      }
+      &.answered {
+        color : $criterion-help-status-answered-color;
+      }
+      &.completed {
+        color : $criterion-help-status-completed-color;
+      }
+      &.none {
+        color : $criterion-help-status-none-color;
+      }
+    }
+
+    .split {
+      padding: 0 5px 0 15px;
+    }
+
+    a {
+      color: $color;
+      text-decoration: none;
+    }
+  }
+}

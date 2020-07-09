@@ -1,0 +1,73 @@
+.criterion-dashboard-fillable-form {
+  background-color: #F6F6F6;
+
+  padding: 10px 10px 0;
+  .page {
+    padding: 0 0 10px;
+
+    & > img {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06), 0px 1px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    .form-items {
+      position: absolute;
+
+      .x-btn-default-small {
+        position: absolute;
+        padding: 0;
+      }
+
+      .x-form-item {
+        position: absolute;
+
+        .x-form-text-field-body {
+          height: inherit;
+
+          .x-form-trigger-wrap-default {
+            height: inherit;
+            border-color: transparent;
+            background-color: transparentize($criterion-ess-base-color, 0.9);
+
+            &.x-form-trigger-wrap-invalid {
+              border-color: $form-text-field-invalid-border-color;
+            }
+          }
+        }
+
+        .x-form-cb-wrap-default {
+          height: 15px;
+
+          .x-form-cb-wrap-inner {
+            position: absolute;
+            bottom: 15px;
+            top: auto;
+          }
+
+          .x-form-cb-default {
+            margin-top: unset;
+          }
+        }
+
+        .x-form-trigger-default {
+          left: unset;
+        }
+
+        input {
+          padding: 0;
+          min-height: unset;
+
+          &.x-form-invalid-field-default {
+            background-color: transparent;
+          }
+        }
+      }
+
+      & > img {
+        position: absolute;
+      }
+
+    }
+
+  }
+
+}

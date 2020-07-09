@@ -1,0 +1,56 @@
+.#{$prefix}legend-container {
+  background: none !important;
+  box-shadow: none !important;
+  position: absolute;
+  bottom: 0;
+}
+
+.#{$prefix}legend-vertical .#{$prefix}legend-item:first-child {
+  border-top: 0.5px solid #CED3DF !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-bottom: none !important;
+  padding: 16px 38px 8px;
+
+  .#{$prefix}legend-item-marker {
+    top: 16px !important;
+  }
+}
+
+.#{$prefix}legend-vertical .#{$prefix}legend-item {
+  border-left: 0.5px solid #CED3DF !important;
+  border-right: 0.5px solid #CED3DF !important;
+  border-bottom: none !important;
+  color: #909AB5;
+  font-weight: $criterion-font-weight-semibold;
+  font-size: 14px;
+  padding: 8px 38px 8px;
+
+  .#{$prefix}legend-item-marker {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 16px;
+    left: 16px !important;
+    top: 8px !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+}
+
+.#{$prefix}legend-vertical .#{$prefix}legend-item:last-child {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  border-bottom: 0.5px solid #CED3DF !important;
+  padding: 8px 38px 16px;
+}
+
+.#{$prefix}legend-vertical .#{$prefix}legend-inner {
+  display: block;
+  text-align: left;
+  padding: 10px 0 0 0 !important;
+  min-width: 200px;
+}
+
+.#{$prefix}legend-vertical .pay-chart-legend {
+  overflow-y: hidden !important;
+}

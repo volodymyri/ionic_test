@@ -1,0 +1,9 @@
+.criterion-attachment-uploading {
+  padding: 9px 10px;
+  background-color: $criterion-container-light-background;
+  border: 1px solid darken($criterion-container-light-background, 25%);
+
+  strong {
+    padding-right: 10px;
+  }
+}

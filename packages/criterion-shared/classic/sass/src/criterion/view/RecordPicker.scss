@@ -1,0 +1,53 @@
+.criterion-record-picker {
+
+  .x-grid-item {
+    .x-action-col-cell {
+      visibility : hidden;
+    }    
+  }
+
+  .x-grid-item {
+    .x-action-col-cell {
+      .always-visible {
+        visibility: visible;
+      }
+    }
+  }
+
+  .x-grid-item.x-grid-item-over {
+    .x-action-col-cell {
+      visibility : visible;
+    }
+  }
+
+  &.def {
+    .x-grid-item.x-grid-item-over {
+      .x-action-col-cell {
+        background: $criterion-blue !important;
+        span {
+          color: #ffffff;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &.hideOnly {
+    .x-grid-item.x-grid-item-over {
+
+    }
+  }
+}
+
+// Part of solution D2-8. Enable show action columns for ReecordPicker selected record on touch devices.
+.x-touch {
+  .criterion-record-picker {
+    .x-grid-item.x-grid-item-selected {
+      .x-action-col-cell {
+        visibility : visible;
+      }
+    }
+  }
+}

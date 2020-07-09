@@ -1,0 +1,28 @@
+.#{$prefix}tip {
+
+  padding: 8px 20px;
+
+  .tip-row {
+
+    display: table-row;
+    font-size: 10px;
+    padding: 6px 0;
+    line-height: 22px;
+
+    .caption {
+      font-weight: $criterion-font-weight-semibold;
+      color: $battleship-grey;
+      display: table-cell;
+    }
+
+    .value {
+      color: $dark;
+      display: table-cell;
+      padding-left: 10px;
+    }
+  }
+
+  .#{$prefix}tip-body-form-invalid {
+    background-position-y: 6px;
+  }
+}

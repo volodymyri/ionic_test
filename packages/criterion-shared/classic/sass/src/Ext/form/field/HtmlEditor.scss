@@ -1,0 +1,30 @@
+.#{$prefix}html-editor-tb .#{$prefix}edit-extlist,
+.#{$prefix}menu-item div.#{$prefix}edit-extlist {
+  @if $enable-font-icons and ($html-editor-numberedlist-glyph != null) {
+    @include font-icon($html-editor-numberedlist-glyph);
+    background: none;
+  } @else {
+    background-position: (-$html-editor-toolbar-icon-size * 6) 0;
+    background-image: theme-background-image('editor/tb-sprite');
+  }
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-addimage,
+.#{$prefix}menu-item div.#{$prefix}edit-addimage {
+  @if $enable-font-icons and ($html-editor-numberedlist-glyph != null) {
+    @include font-icon($html-editor-numberedlist-glyph);
+    background: none;
+  } @else {
+    background-position: (-$html-editor-toolbar-icon-size * 14) 0;
+    background-image: theme-background-image('editor/tb-sprite');
+  }
+}
+
+.x-htmleditor-menu-btn .x-btn-glyph {
+  color: #282e3a !important;
+}
+
+.criterion-btn-transparent .x-btn-inner {
+  color: #282e3a !important;
+}
+
