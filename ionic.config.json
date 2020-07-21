@@ -1,4 +1,7 @@
 {
   "name": "CriterionHCM",
-  "type": "custom"
+  "type": "custom",
+  "integrations": {
+    "capacitor": {}
+  }
 }
