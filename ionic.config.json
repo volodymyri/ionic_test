@@ -1,9 +1,4 @@
 {
   "name": "CriterionHCM",
-  "type": "custom",
-  "integrations": {
-    "cordova": {
-	  "version": "7.0.1"
-	}
-  }
+  "type": "custom"
 }
