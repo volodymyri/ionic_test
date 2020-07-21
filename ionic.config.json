@@ -2,6 +2,7 @@
   "name": "CriterionHCM",
   "type": "custom",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   }
 }
