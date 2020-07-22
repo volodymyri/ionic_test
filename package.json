@@ -12,12 +12,5 @@
   },
   "author": "Criterion",
   "license": "ISC",
-  "homepage": "https://www.criterionhcm.com/",
-  "dependencies": {
-    "@capacitor/core": "2.3.0",
-    "@capacitor/ios": "^2.3.0"
-  },
-  "devDependencies": {
-    "@capacitor/cli": "2.3.0"
-  }
+  "homepage": "https://www.criterionhcm.com/"
 }
