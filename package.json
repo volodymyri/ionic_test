@@ -46,7 +46,8 @@
       },
       "cordova-plugin-fingerprint-aio-criterion": {
         "FACEID_USAGE_DESCRIPTION": " "
-      }
+      },
+      "cordova-plugin-compat": {}
     }
   }
 }
