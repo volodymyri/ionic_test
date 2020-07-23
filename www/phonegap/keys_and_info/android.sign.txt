@@ -1,5 +1,0 @@
-#example
-
-jarsigner -verbose -keystore ../../keys_and_info/android/criterion.jks build/outputs/apk/android-release-unsigned.apk criterion
-
-/Applications/ADT/sdk/build-tools/24.0.0/zipalign 4 build/outputs/apk/android-release-unsigned.apk build/outputs/apk/android-release-unsigned-a.apk
