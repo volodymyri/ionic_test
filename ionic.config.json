@@ -1,7 +1,0 @@
-{
-  "name": "CriterionHCM",
-  "type": "custom",
-  "integrations": {
-    "cordova": {}
-  }
-}
