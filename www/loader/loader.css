@@ -1,0 +1,131 @@
+@keyframes criterion-dot-move {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    33% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    66% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+}
+
+@-webkit-keyframes criterion-dot-move {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-300px);
+    }
+    33% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+    66% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(300px);
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    position: static;
+}
+
+.lngtoken {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+body.busy, body.busy * {
+    cursor: progress !important;
+}
+
+#criterion-loader {
+    font-family: calibri, arial, sans-serif;
+    line-height: 17px;
+    font-size: 18px;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#criterion-loader .criterion-loader-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots {
+    color: #c0c0c0;
+    line-height: 34px;
+    padding-top: 7px;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots label {
+    opacity: 0;
+    display: inline-block;
+}
+
+#criterion-loader .criterion-loader-inner {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots label:nth-child(6) {
+    -webkit-animation: criterion-dot-move 3s infinite ease-in-out;
+    animation: criterion-dot-move 3s infinite ease-in-out;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots label:nth-child(5) {
+    -webkit-animation: criterion-dot-move 3s 100ms infinite ease-in-out;
+    animation: criterion-dot-move 3s 100ms infinite ease-in-out;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots label:nth-child(4) {
+    -webkit-animation: criterion-dot-move 3s 200ms infinite ease-in-out;
+    animation: criterion-dot-move 3s 200ms infinite ease-in-out;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots label:nth-child(3) {
+    -webkit-animation: criterion-dot-move 3s 300ms infinite ease-in-out;
+    animation: criterion-dot-move 3s 300ms infinite ease-in-out;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots label:nth-child(2) {
+    -webkit-animation: criterion-dot-move 3s 400ms infinite ease-in-out;
+    animation: criterion-dot-move 3s 400ms infinite ease-in-out;
+}
+
+#criterion-loader .criterion-loader-inner .loading-dots label:nth-child(1) {
+    -webkit-animation: criterion-dot-move 3s 500ms infinite ease-in-out;
+    animation: criterion-dot-move 3s 500ms infinite ease-in-out;
+}
+
+#auth,
+#auth_login,
+#auth_info,
+#auth_2fa,
+#auth_tenant,
+#auth_forgot {
+    display: none;
+}

@@ -1,0 +1,7 @@
+.photo {
+  .circular {
+    @include criterion-round-picture(90px);
+
+    box-shadow: inset 0px 0px 5px rgba(40, 46, 58, 0.55);
+  }
+}
