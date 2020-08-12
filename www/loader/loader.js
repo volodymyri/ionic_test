@@ -905,7 +905,7 @@ var tenants = [], selectedTenant = null, thirdPartyIsActive = false, globalLogin
                             });
                         }
                     } else {
-                        if (selectedTenant['authenticationTypeCd'] === EXTERNAL_AUTH_TYPE.ADFS) {
+                        if (selectedTenant['authenticationTypeCd'] === EXTERNAL_AUTH_TYPE.AZURE_AD) {
                             if (!thirdPartyIsActive) {
                                 thirdPartyIsActive = true;
                                 hideElement('auth');

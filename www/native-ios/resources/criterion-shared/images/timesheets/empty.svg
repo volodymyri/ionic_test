@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="329" height="329"
+     viewBox="0 0 329 329">
+    <defs>
+        <filter id="b" width="105.8%" height="108.8%" x="-2.9%" y="-3.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <rect id="a" width="150" height="45" rx="10"/>
+        <mask id="c" width="150" height="45" x="0" y="0" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <rect id="d" width="69" height="95" rx="5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#b)" transform="translate(-370 -271)">
+        <g fill-opacity=".3" transform="translate(394 290)">
+            <circle cx="140.5" cy="140.5" r="140.5" fill="#EDEFF2"/>
+            <circle cx="140.858" cy="140.858" r="113.619" fill="#E9ECEF"/>
+            <circle cx="140.858" cy="140.858" r="87.096" fill="#D7DEE6"/>
+        </g>
+        <g transform="translate(461 343)">
+            <use fill="#FEFEFE" stroke="#D7DEE6" stroke-dasharray="5,3" stroke-width="2" mask="url(#c)"
+                 xlink:href="#a"/>
+            <path fill="#D7DEE6"
+                  d="M65.844 30l-1.6-4.087h-5.15L57.512 30H56l5.08-12.902h1.257L67.39 30h-1.547zm-2.066-5.432l-1.494-3.981a21.325 21.325 0 0 1-.597-1.855c-.13.563-.314 1.181-.554 1.855l-1.512 3.981h4.157zm15.636-1.116c0 2.121-.576 3.743-1.727 4.865C76.536 29.439 74.879 30 72.717 30h-3.56V17.15h3.938c1.998 0 3.55.554 4.658 1.662 1.107 1.107 1.661 2.654 1.661 4.64zm-1.582.053c0-1.676-.42-2.939-1.261-3.788-.841-.85-2.09-1.275-3.749-1.275h-2.17v10.266h1.819c1.781 0 3.12-.438 4.016-1.314.897-.876 1.345-2.172 1.345-3.89zm14.704-.053c0 2.121-.576 3.743-1.727 4.865C89.658 29.439 88.001 30 85.84 30h-3.56V17.15h3.938c1.998 0 3.55.554 4.658 1.662 1.107 1.107 1.661 2.654 1.661 4.64zm-1.582.053c0-1.676-.42-2.939-1.261-3.788-.841-.85-2.09-1.275-3.749-1.275h-2.17v10.266h1.819c1.781 0 3.12-.438 4.016-1.314.897-.876 1.345-2.172 1.345-3.89z"/>
+        </g>
+        <g stroke="#D7DEE6" stroke-linecap="round">
+            <path d="M535 396v16M541 407c-3.673 4.26-5.694 6.391-6.064 6.395-.37.005-2.349-2.082-5.936-6.26"/>
+        </g>
+        <g>
+            <g transform="translate(500 424)">
+                <use fill="#FFF" xlink:href="#d"/>
+                <rect width="68" height="94" x=".5" y=".5" stroke="#D7DEE6" rx="5"/>
+            </g>
+            <g fill="#D7DEE6" transform="translate(510 434)">
+                <rect width="50" height="2.909" rx="1.455"/>
+                <rect width="50" height="2.909" y="7.273" rx="1.455"/>
+                <rect width="50" height="2.909" y="14.545" rx="1.455"/>
+                <rect width="50" height="2.909" y="21.818" rx="1.455"/>
+                <rect width="35.714" height="2.909" y="29.091" rx="1.455"/>
+            </g>
+            <path fill="#FFF" stroke="#D7DEE6"
+                  d="M569.5 536c-12.408 0-22.5-10.092-22.5-22.5s10.092-22.5 22.5-22.5 22.5 10.092 22.5 22.5c0 12.402-10.092 22.5-22.5 22.5z"/>
+            <path fill="#D7DEE6"
+                  d="M569.815 514.087v-10.031c0-.586-.404-1.056-.908-1.056-.503 0-.907.47-.907 1.056v10.555c0 .33.131.643.358.841l7.188 6.334a.825.825 0 0 0 .546.214c.276 0 .546-.144.723-.416.305-.466.223-1.126-.174-1.477l-6.826-6.02z"/>
+        </g>
+    </g>
+</svg>
