@@ -1,5 +1,5 @@
 {
-  "name": "com.domain.ess",
+  "name": "com.criterion.ess",
   "displayName": "ess",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
