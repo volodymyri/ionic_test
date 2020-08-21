@@ -21,15 +21,16 @@
     "cordova-plugin-dialogs": "^1.3.4",
     "cordova-plugin-fingerprint-aio-criterion": "^2.0.15",
     "cordova-plugin-geolocation": "^2.4.3",
+    "cordova-plugin-inappbrowser": "^3.2.0",
     "cordova-plugin-ms-adal-criterion": "git+https://github.com/nechal/azure-activedirectory-library-for-cordova-criterion.git#786591c0412819f6f640a2bc40c5dbe9e43cacfd",
     "cordova-plugin-splashscreen": "^4.1.0",
     "cordova-plugin-whitelist": "^1.3.4",
-    "cordova-plugin-wkwebview-engine": "^1.2.1"
+    "cordova-plugin-wkwebview-engine": "^1.2.1",
+    "cordova-plugin-wkwebview-engine-allowfileaccess": "0.0.1"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-wkwebview-engine": {},
       "cordova-plugin-device": {},
       "cordova-plugin-dialogs": {},
       "cordova-plugin-geolocation": {
@@ -41,7 +42,10 @@
       },
       "cordova-plugin-app-preferences-criterion": {},
       "cordova-plugin-ms-adal-criterion": {},
-      "cordova-plugin-ms-adal": {}
+      "cordova-plugin-ms-adal": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-wkwebview-engine": {},
+      "cordova-plugin-wkwebview-engine-allowfileaccess": {}
     },
     "platforms": [
       "ios"
