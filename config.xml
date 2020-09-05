@@ -150,4 +150,5 @@
     <plugin name="cordova-plugin-fingerprint-aio-criterion" spec="^2.0.12" />
     <plugin name="cordova-plugin-wkwebview-engine" spec="^1.2.1" />
     <plugin name="cordova-plugin-wkwebview-engine-allowfileaccess" spec="^0.0.1" />
+    <plugin name="cordova-plugin-advanced-http" spec="^3.0.1" />
 </widget>
