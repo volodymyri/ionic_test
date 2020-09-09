@@ -265,6 +265,18 @@ a:hover {
 
 .biometric-pre {
     color: #909AB5;
+    display: flex;
+    flex-direction: row;
+}
+
+.biometric-pre .line{
+    border-bottom: 1px solid #E5E8ED;
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.biometric-pre span{
+    margin: 0 12px;
 }
 
 span.scanning-icon {
