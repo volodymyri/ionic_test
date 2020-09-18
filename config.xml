@@ -148,5 +148,4 @@
     <plugin name="cordova-plugin-app-preferences-criterion" spec="git+https://github.com/nechal/me.apla.cordova.app-preferences-criterion.git#5c15e0da944c0c9c229c101fcaaa8c65605b0cd2" />
     <plugin name="cordova-plugin-ms-adal-criterion" spec="git+https://github.com/nechal/azure-activedirectory-library-for-cordova-criterion.git#786591c0412819f6f640a2bc40c5dbe9e43cacfd" />
     <plugin name="cordova-plugin-fingerprint-aio-criterion" spec="^2.0.12" />
-    <plugin name="cordova-plugin-wkwebview-engine" spec="^1.2.1" />
 </widget>
