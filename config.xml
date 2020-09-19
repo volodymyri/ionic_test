@@ -127,6 +127,13 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
+        <splash height="1242" src="resources/ios/splash/Default-Landscape-2688h~iphone.png" width="2688" />
+        <splash height="828" src="resources/ios/splash/Default-Landscape-1792h~iphone.png" width="1792" />
+        <splash height="1125" src="resources/ios/splash/Default-Landscape-2436h.png" width="2436" />
+        <splash height="1242" src="resources/ios/splash/Default-Landscape-736h.png" width="2208" />
+        <splash height="1536" src="resources/ios/splash/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="2048" src="resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" />
+        <splash height="768" src="resources/ios/splash/Default-Landscape~ipad.png" width="1024" />
     </platform>
     <access origin="*" />
     <allow-intent href="*" />
@@ -148,4 +155,7 @@
     <plugin name="cordova-plugin-app-preferences-criterion" spec="git+https://github.com/nechal/me.apla.cordova.app-preferences-criterion.git#5c15e0da944c0c9c229c101fcaaa8c65605b0cd2" />
     <plugin name="cordova-plugin-ms-adal-criterion" spec="git+https://github.com/nechal/azure-activedirectory-library-for-cordova-criterion.git#786591c0412819f6f640a2bc40c5dbe9e43cacfd" />
     <plugin name="cordova-plugin-fingerprint-aio-criterion" spec="^2.0.12" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^4.0.0" />
+    <plugin name="cordova-plugin-wkwebview-engine" spec="^1.2.1" />
+    <plugin name="cordova-plugin-wkwebview-engine-allowfileaccess" spec="^0.0.1" />
 </widget>
