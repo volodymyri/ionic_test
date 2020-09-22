@@ -572,8 +572,10 @@ var tenants = [], selectedTenant = null, thirdPartyIsActive = false, globalLogin
                     Fingerprint.isAvailable(function(result) {
                         if (result === 'face') {
                             $('span.scanning-icon').addClass('face-id');
+                            $('span.sign-in-text').html('Sign in with Face ID');
                         } else {
                             $('span.scanning-icon').removeClass('face-id');
+                            $('span.sign-in-text').html('Sign in with Touch ID');
                         }
 
                         if (appPreferences) {
